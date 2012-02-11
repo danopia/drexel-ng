@@ -71,7 +71,6 @@
   <ItemGroup>
     <Compile Include="AnimatedControl.vb" />
     <Compile Include="AnimationSet.vb" />
-    <Compile Include="Controls\FontItem.vb" />
     <Compile Include="Controls\ListItem.vb" />
     <Compile Include="Controls\MenuListItem.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

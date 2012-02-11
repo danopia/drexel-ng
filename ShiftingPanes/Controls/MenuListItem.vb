@@ -1,6 +1,7 @@
 ﻿Imports System.Windows.Controls
 Imports System.Windows
 Imports System.Windows.Media
+Imports System.Windows.Input
 
 Public Class MenuListItem(Of x)
     Inherits ListItem(Of x)
@@ -12,6 +13,11 @@ Public Class MenuListItem(Of x)
     Protected Friend _grid As New Grid
     Protected Friend _content As Object
     Protected Friend _brush As New SolidColorBrush(Colors.LightBlue)
+
+    Public Sub New(Source As x)
+        Me.New()
+        Me.Source = Source
+    End Sub
 
     Private Sub Button_Expanded(ByVal sender As System.Object, ByVal e As System.Windows.RoutedEventArgs) Handles _button.Expanded
         OpacityTo(0.75)
@@ -101,4 +107,14 @@ Public Class MenuListItem(Of x)
         End Set
     End Property
 
+    Public Property IsExpandable As Boolean
+        Get
+            Return _button.IsEnabled
+        End Get
+        Set(value As Boolean)
+            _button.IsEnabled = value
+            _button.Cursor = IIf(value, Nothing, Cursors.No)
+            Me.Cursor = IIf(value, Cursors.Hand, Nothing)
+        End Set
+    End Property
 End Class

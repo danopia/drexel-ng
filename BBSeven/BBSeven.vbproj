@@ -110,15 +110,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ModuleListItem.vb" />
     <Compile Include="ModuleListPane.vb" />
     <Compile Include="CourseListPane.vb" />
-    <Compile Include="CourseListItem.vb" />
-    <Compile Include="Modules\Discussions\DiscussionTopicMessage.vb" />
     <Compile Include="Modules\Discussions\DiscussionTopicPane.vb" />
-    <Compile Include="Modules\Discussions\DiscussionTopicListItem.vb" />
     <Compile Include="Modules\Discussions\DiscussionTopicListPane.vb" />
-    <Compile Include="Modules\Discussions\DiscussionsListItem.vb" />
     <Compile Include="Modules\Discussions\DiscussionsListPane.vb" />
     <Compile Include="Settings\SettingsWindow.xaml.vb">
       <DependentUpon>SettingsWindow.xaml</DependentUpon>
@@ -232,9 +227,6 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\11971483561439582332barretr_Gear.svg.thumb.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\gear.png" />

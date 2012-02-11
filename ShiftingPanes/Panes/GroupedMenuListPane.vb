@@ -1,7 +1,7 @@
 ﻿Imports System.Windows.Controls
 
-Public Class GroupedMenuListPane(Of x, y As {New, MenuListItem(Of x)})
-    Inherits MenuListPane(Of x, y)
+Public MustInherit Class GroupedMenuListPane(Of x)
+    Inherits MenuListPane(Of x)
 
     Public Overloads Sub SetSources(SourceList As Dictionary(Of String, List(Of x)))
         _stack.Children.Clear()
@@ -15,8 +15,7 @@ Public Class GroupedMenuListPane(Of x, y As {New, MenuListItem(Of x)})
             _stack.Children.Add(_groupExpander)
 
             For Each Source As x In SourceGroup.Value
-                Dim Control As New y
-                Control.Source = Source
+                Dim Control = BuildItem(Source)
 
                 AddHandler Control.OnSelect, AddressOf OnItemSelect
                 AddHandler Control.OnDeselect, AddressOf OnItemDeselect

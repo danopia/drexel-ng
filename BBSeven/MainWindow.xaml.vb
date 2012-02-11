@@ -32,7 +32,7 @@ Class MainWindow
             ShiftingView.PopPane()
         Else
             _moduleList = New ModuleListPane
-            _moduleList.SetCourse(myCourseList.SelectedItem._course)
+            _moduleList.SetCourse(myCourseList.SelectedItem.Source)
             ShiftingView.PutPaneAfter(myCourseList, _moduleList)
             
             AddHandler _moduleList.OnSelectionChanged, AddressOf myModuleList_OnSelectModule
