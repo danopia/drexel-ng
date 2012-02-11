@@ -1,0 +1,84 @@
+﻿<UserControl x:Class="Throbber"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" Cursor="Wait">
+    <UserControl.Background>
+        <SolidColorBrush x:Name="BGBrush" Color="White" Opacity="0" />
+    </UserControl.Background>
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="UserControl.Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation
+                                Storyboard.TargetName="BGBrush" 
+                                Storyboard.TargetProperty="Opacity"
+                                From="0" To="0.75" Duration="0:0:0.5">
+                        <DoubleAnimation.EasingFunction>
+                            <QuadraticEase />
+                        </DoubleAnimation.EasingFunction>
+                    </DoubleAnimation>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </UserControl.Triggers>
+
+    <Grid Width="100" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="26" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="26" />
+        </Grid.RowDefinitions>
+        <Label Content="loading..." Grid.Row="2" HorizontalAlignment="Center" />
+
+        <Image Name="CenterImage" Stretch="Fill" Source="/ShiftingPanes;component/Images/spinner-center.png" Grid.Row="1" />
+        <Image Name="InnerImage" Stretch="Fill" Source="/ShiftingPanes;component/Images/spinner-inner.png" Grid.Row="1">
+            <Image.RenderTransform>
+                <RotateTransform x:Name="InnerTransform" Angle="0" CenterX="50" CenterY="50" />
+            </Image.RenderTransform>
+            <Image.Triggers>
+                <!-- Animates the rectangle's opacity. -->
+                <EventTrigger RoutedEvent="Image.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                                Storyboard.TargetName="InnerTransform" 
+                                Storyboard.TargetProperty="Angle"
+                                From="0" To="-180" Duration="0:0:1.1"
+                                RepeatBehavior="Forever">
+                                <DoubleAnimation.EasingFunction>
+                                    <CircleEase EasingMode="EaseInOut"/>
+                                </DoubleAnimation.EasingFunction>
+                            </DoubleAnimation>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Image.Triggers>
+        </Image>
+        <Image Name="OuterImage" Stretch="Fill" Source="/ShiftingPanes;component/Images/spinner-outer.png" Grid.Row="1">
+            <Image.RenderTransform>
+                <RotateTransform x:Name="OuterTransform" Angle="0" CenterX="50" CenterY="50" />
+            </Image.RenderTransform>
+            <Image.Triggers>
+                <!-- Animates the rectangle's opacity. -->
+                <EventTrigger RoutedEvent="Image.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                                Storyboard.TargetName="OuterTransform" 
+                                Storyboard.TargetProperty="Angle"
+                                From="0" To="1800" Duration="0:0:5"
+                                RepeatBehavior="Forever">
+                                <DoubleAnimation.EasingFunction>
+                                    <CircleEase EasingMode="EaseInOut"/>
+                                </DoubleAnimation.EasingFunction>
+                            </DoubleAnimation>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Image.Triggers>
+        </Image>
+    </Grid>
+</UserControl>

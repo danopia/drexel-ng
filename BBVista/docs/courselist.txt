@@ -1,0 +1,1750 @@
+function submitAreaDisplay(areaId, openInNewWindow, linkID){displayTool('areaViewCSO.dowebct', 'areaid='+areaId, openInNewWindow, areaId, linkID);}
+function submitTopicDisplay(topicId, openInNewWindow, linkID) {displayTool('topicViewCSO.dowebct', 'topicid='+topicId, openInNewWindow, topicId, linkID);}
+function submitPTDisplay(id, openInNewWindow, linkID) {displayTool('ptLaunch.dowebct', 'id='+id, openInNewWindow, id, linkID);}
+function submitTocDisplay(tocID, openInNewWindow, linkID){displayTool('studentViewtoc.dowebct', 'TOCId='+tocID, openInNewWindow, tocID, linkID);}
+function submitUrlDisplay(UrlID, openInNewWindow, linkID){displayTool('displayURLForQM.dowebct', 'URLId='+UrlID, openInNewWindow, UrlID, linkID);}
+function submitScormDisplay(ScormID, openInNewWindow, linkID){displayTool('displayscorm.dowebct', 'scormId='+ScormID, true, ScormID, linkID);}
+function submitPageDisplay(pageId, openInNewWindow, linkID, officeFlag){displayTool('displayContentPage.dowebct', 'pageID='+pageId, openInNewWindow, pageId, linkID, officeFlag);}
+function submitOrganizerDisplay(orgID, linkID){displayTool('studentCourseView.dowebct', 'displayinfo='+orgID+',ORGANIZER_PAGE_TYPE', false, orgID, linkID);}
+function submitProjectDisplay(projectId, openInNewWindow, linkID){displayTool('viewAssignedProject.dowebct', 'projectId='+projectId+'&returnURL=/courseFS.dowebct?tab=view', openInNewWindow, projectId, linkID);}
+function submitAssessmentDisplay(assessmentId, openInNewWindow, linkID){displayTool('displayAssessmentIntro.dowebct', 'assessment='+assessmentId, openInNewWindow, assessmentId, linkID);}
+function submitMediaCollectionDisplay(collectionId, openInNewWindow, linkID){displayTool('viewEntriesInCollection.dowebct', 'collectionid='+collectionId, openInNewWindow, collectionId, linkID);}
+function submitChatRoomDisplay(roomId, openInNewWindow, linkID){displayTool('enterChat.dowebct', 'OrgRoomID='+roomId, openInNewWindow, roomId, linkID);}
+function submitSelfEnrollDisplay(signupSheetId, openInNewWindow, orgId, linkID){displayTool('membergradebookGetSelfEnrollView.dowebct', 'signupSheetId='+signupSheetId+'&orgId='+orgId, openInNewWindow, signupSheetId, linkID);}
+</SCRIPT>
+
+displayTool('syllabusStudentView.dowebct', 'componentId='+id, openInNewWindow, id);
+
+
+
+
+
+<table align="center" border=0 cellpadding='0' cellspacing='0' width="100%"><tr><td width = "100%">
+
+<div class="userhtml" style="text-align: left"> 
+
+<font size="+3"><div align="center">CS 122 Computation Lab II </div></font>
+<br>
+<div align="center">
+<table>
+<tr>
+<td><strong>Course Website</strong>:</td>
+<td><a href="https://www.cs.drexel.edu/complab/cs122/winter2012/">https://www.cs.drexel.edu/complab/cs121/winter2012/</a></td>
+</tr>
+<tr>
+<td><strong>Maple TA 7</strong>:</td>
+<td><a href="https://mapleta.cs.drexel.edu">https://mapleta.cs.drexel.edu</a></td>
+</tr>
+</table>
+</div>
+<p></p>
+<hr align="center">
+
+</div>
+
+</td></tr></table>
+
+
+
+
+
+
+<a href="javascript:submitLoad('2466087321111','ORGANIZER_PAGE_TYPE', false, false)"
+
+>
+
+<img src="/webct/urw/tp2466051976111.lc2459371910121/PresentationSettingsIconServlet/defaultIconIdentifier/ORGANIZER_PAGE_TYPE/41010" hspace="2" border="0" align="left" class=""
+
+
+
+
+/></a>
+
+<div class="orgtext">
+
+<a href="javascript:submitLoad('2466087321111','ORGANIZER_PAGE_TYPE', false, false)"
+
+>
+Lab 1</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="palette2466087043111" class="pallettebuttons" >
+<ul title="Course Tools">
+
+
+
+
+
+
+
+
+<li><a href="/webct/urw/tp2466051976111.lc2459371910121/ctbDispatch.dowebct?insView=/CourseContentDispatch.dowebct&desView=/CourseContentDispatch.dowebct&studentView=/CourseContentDispatch.dowebct&toolName=OrganizerPage&tab=view&courseMapDisplayName=coursecontent.CTBCourseMapDisplayName" target="RIGHTTOOLFRAME" class="flylinkct" id="cthomepage" title="Course Content" onclick="highlightit(this); getApplicationFrame().setFocusOnToolFrame();" onblur="if(this.className!='flylinkctover'){strlength=this.className.length; this.className=this.className.substring(0,strlength-2)}" onfocus="if(this.className!='flylinkctover')this.className=this.className+'mo'"><img src="/webct/images/home.gif" height="20" width="20" align="absmiddle" border="0" class="" title="Course Content" alt="Course Content">&nbsp;Course&nbsp;Content<img src="/webct/images/shim.gif" align="absmiddle" border="0" alt="" width="5" height="20" /></a></li>
+
+
+
+
+
+
+
+<script language = "javascript">
+var nodes = [];
+var tree = new WebFXTree("Root");
+var tree10 = new WebFXTreeItem('Lab 1',  '/webct/urw/tp2466051976111.lc2459371910121/viewCourseMapItemDispatcher.dowebct?linkId=2466087325111&componentId=2466087321111&componentType=ORGANIZER_PAGE_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree10.target = 'RIGHTTOOLFRAME';
+tree.add(tree10);
+var tree1020 = new WebFXTreeItem('Pre-lab 1 Reading',  '/webct/urw/tp2466051976111.lc2459371910121/viewCourseMapItemDispatcher.dowebct?linkId=2472175046031&componentId=2472175042031&componentType=PAGE_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree1020.target = 'RIGHTTOOLFRAME';
+tree10.add(tree1020);
+var tree1021 = new WebFXTreeItem('Lab 1 Directions (Scripts...',  '/webct/urw/tp2466051976111.lc2459371910121/viewCourseMapItemDispatcher.dowebct?linkId=2472175047031&componentId=2472175044031&componentType=PAGE_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree1021.target = 'RIGHTTOOLFRAME';
+tree10.add(tree1021);
+var tree1022 = new WebFXTreeItem('Lab 1 Directions (PDF)',  '/webct/urw/tp2466051976111.lc2459371910121/viewCourseMapItemDispatcher.dowebct?linkId=2473240616071&componentId=2473240614071&componentType=PAGE_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree1022.target = 'RIGHTTOOLFRAME';
+tree10.add(tree1022);
+var tree11 = new WebFXTreeItem('Lab 2',  '/webct/urw/tp2466051976111.lc2459371910121/viewCourseMapItemDispatcher.dowebct?linkId=2466087330111&componentId=2466087326111&componentType=ORGANIZER_PAGE_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree11.target = 'RIGHTTOOLFRAME';
+tree.add(tree11);
+var tree12 = new WebFXTreeItem('Lab 3',  '/webct/urw/tp2466051976111.lc2459371910121/viewCourseMapItemDispatcher.dowebct?linkId=2466087335111&componentId=2466087331111&componentType=ORGANIZER_PAGE_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree12.target = 'RIGHTTOOLFRAME';
+tree.add(tree12);
+var tree13 = new WebFXTreeItem('Lab 4',  '/webct/urw/tp2466051976111.lc2459371910121/viewCourseMapItemDispatcher.dowebct?linkId=2466087340111&componentId=2466087336111&componentType=ORGANIZER_PAGE_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree13.target = 'RIGHTTOOLFRAME';
+tree.add(tree13);
+var tree14 = new WebFXTreeItem('CS 122 Syllabus Link',  '/webct/urw/tp2466051976111.lc2459371910121/viewCourseMapItemDispatcher.dowebct?linkId=2466094754111&componentId=2466094752111&componentType=URL_TYPE&tab=view&targetFrame=_new');
+tree14.target = '_new';
+tree.add(tree14);
+var tree15 = new WebFXTreeItem('CS 122 Lab Materials Link',  '/webct/urw/tp2466051976111.lc2459371910121/viewCourseMapItemDispatcher.dowebct?linkId=2466094814111&componentId=2466094812111&componentType=URL_TYPE&tab=view&targetFrame=_new');
+tree15.target = '_new';
+tree.add(tree15);
+
+document.write(tree);
+</script>
+
+
+
+
+
+
+<li><a href="/webct/urw/tp2466051976111.lc2459371910121/ctbDispatch.dowebct?insView=/sstuViewAllAnnouncements.dowebct&desView=/viewAnnouncements.dowebct&studentView=/sstuViewAllAnnouncements.dowebct&toolName=Campus Announcements&tab=view&courseMapDisplayName=ann.CTBCourseMapDisplayName" target="RIGHTTOOLFRAME" class="flylinkct" id="ctannouncements" title="Announcements" onclick="highlightit(this); getApplicationFrame().setFocusOnToolFrame();" onblur="if(this.className!='flylinkctover'){strlength=this.className.length; this.className=this.className.substring(0,strlength-2)}" onfocus="if(this.className!='flylinkctover')this.className=this.className+'mo'"><img src="/webct/images/large_announcements.gif" height="20" width="20" align="absmiddle" border="0" class="" title="Announcements" alt="Announcements">&nbsp;Announcements<img src="/webct/images/shim.gif" align="absmiddle" border="0" alt="" width="5" height="20" /></a></li>
+
+
+
+
+
+
+
+
+
+<span>Your location: </span>
+
+
+Discussions
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<form name="discussionHomepageForm" method="post" action="/webct/urw/tp2466051976111.lc2459371910121/discussionHomepageView.dowebct">
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="allmydiscussions" cellspacing="6" summary="">
+
+
+<tr>
+<td>
+<strong><a id="allTopicsLink" href="javascript:showAllTopicOrMyPost('/webct/urw/tp2466051976111.lc2459371910121/newMessageThread.dowebct?discussionaction=mDisplay&topicid=0&msgListing=alltopics&topicIds=');">All Topics</a></strong>
+<span id="allTopicsSpan" style="display:none"><strong>All Topics</strong>&nbsp;</span>
+(
+8 Messages
+
+/
+<strong>
+<a href="javascript:openNew('/webct/urw/tp2466051976111.lc2459371910121/newMessageThread.dowebct?discussionaction=newMsgAllTopicCompileView&homePage=true');" title="View messages in a new window">1 New</a>
+</strong>
+
+)
+</td>
+
+
+
+
+<td>
+<strong><a id="allMyPostsLink" href="javascript:showAllTopicOrMyPost('/webct/urw/tp2466051976111.lc2459371910121/newMessageThread.dowebct?discussionaction=mDisplay&msgListing=mypostMsg&topicIds=');">All My Posts</a></strong>
+<span id="allMyPostsSpan" style="display:none"><strong>All My Posts</strong>&nbsp;</span>
+(
+0 Messages
+
+)
+</td>
+</tr>
+
+
+</table>
+
+
+
+
+
+
+
+
+<h3><a href="javascript:isPreview('/webct/urw/tp2466051976111.lc2459371910121/newMessageThread.dowebct?discussionaction=mDisplay&topicid=2466087128111&areaid=2466051976111&fromTopic=true&homePage=true')" title="Enter Default Topic">Default Topic</a></h3>
+
+&nbsp;
+
+
+&nbsp;&nbsp;(8 Messages
+
+/
+<strong><a href="Javascript:newMsgCompileView('2466087128111','0');">1 New</strong></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Viewing discusion forum
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/webct/urw/tp2466051976111.lc2459371910121/discussionHomepageView.dowebct?insView=/discussionHomepageView.dowebct&amp;desView=/discussionHomepageView.dowebct&amp;studentView=/discussionHomepageView.dowebct&amp;toolName=Discussion&amp;tab=view&amp;courseMapDisplayName=discussion.CTBCourseMapDisplayName" id="backId" title="Back" class="inline" target="RIGHTTOOLFRAME"><img src="/webct/images/small_back.gif" width="16" height="16" alt="Back"></a> <img id="divider" src="/webct/images/dot_divide2.gif" alt="">
+<script language="javascript">
+var backLink = document.getElementById('backId');
+if (isTargetValid(this.window,6,backLink.target) == false) {
+backLink.target = this.window.name;
+}
+</script>
+
+
+<span>Your location: </span>
+
+
+<a href="/webct/urw/tp2466051976111.lc2459371910121/discussionHomepageView.dowebct?insView=/discussionHomepageView.dowebct&amp;desView=/discussionHomepageView.dowebct&amp;studentView=/discussionHomepageView.dowebct&amp;toolName=Discussion&amp;tab=view&amp;courseMapDisplayName=discussion.CTBCourseMapDisplayName" id="breadcrumb0" target="RIGHTTOOLFRAME">Discussions</a> &#8250;
+<script language="javascript">
+var bcLink = document.getElementById('breadcrumb0');
+if (isTargetValid(this.window,6,bcLink.target) == false) {
+bcLink.target = this.window.name;
+}
+</script>
+
+
+
+
+Default Topic
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<p>
+<span>Topic Type:</span>
+Threaded
+</p>
+<p>
+<span>Graded:</span>
+
+No
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr id="row2474272902081"  onmouseover="highlightOn(this);" onmouseout="highlightOff(this);">
+
+<td width="1%" nowrap="nowrap"  align="center" class="notoppad">
+<input type="checkbox" indent="0" id="2474272902081"  name="thread" value="2474272902081" onclick="toggleSelect(this.form, 'all', 'thread'); highlightOn2('row2474272902081', this);" />
+</td>
+<td align="left" class="notoppad" width="1%">
+
+<img src="/webct/images/shim.gif" width="1" height="1" border="0" alt=""  align="absmiddle" />
+
+</td>
+<td align="left" width="39%" class="notoppad">
+
+
+
+
+<script language="Javascript">var spanvar2474272902081="true"</script>
+<span class="boldme" id="span2474272902081">
+
+<label for="2474272902081">
+<a href="javascript:isMsgPreview('newMessageThread.dowebct?discussionaction=viewMessage&messageid=2474272902081&topicid=2466087128111&refreshPage=true&sourcePage=',2474272902081)" title="Link opens in a new window">
+The readings</a>
+</label>
+
+
+<span class="alert"><b>(New)</b></span>
+
+
+</span>
+
+
+
+</td>
+
+<td>
+
+&nbsp;
+
+</td>
+
+
+<td>
+
+&nbsp;
+
+</td>
+
+
+
+
+<td nowrap="nowrap" valign="top">
+
+<a href="Javascript:setGlobalParametersFordiscussionMemberMenuForNonGradeableTopics('discussionMemberMenuForNonGradeableTopics', '2013894308011'); showmenu('discussionMemberMenuForNonGradeableTopics8872330544860874232', 'discussionMemberMenuForNonGradeableTopics_SSTU',1,0);" name="discussionMemberMenuForNonGradeableTopics8872330544860874232link" title="View PeopleLink Options for this User"  >Brian Lee</a><a href="Javascript:setGlobalParametersFordiscussionMemberMenuForNonGradeableTopics('discussionMemberMenuForNonGradeableTopics', '2013894308011'); showmenu('discussionMemberMenuForNonGradeableTopics8872330544860874232', 'discussionMemberMenuForNonGradeableTopics_SSTU',1,0);" name="discussionMemberMenuForNonGradeableTopics8872330544860874232link" title="View PeopleLink Options for this User"  class="inline2"><img src="/webct/images/conarrow2.gif"  border="0" id="discussionMemberMenuForNonGradeableTopics8872330544860874232img"  align="absmiddle" alt="View PeopleLink Options for this User"></a>
+
+</td>
+
+<td nowrap="nowrap">January 14, 2012 11:39 AM</td>
+</tr>
+
+
+
+
+
+
+<tr id="row2473127536061"  onmouseover="highlightOn(this);" onmouseout="highlightOff(this);">
+
+<td width="1%" nowrap="nowrap"  align="center" class="notoppad">
+<input type="checkbox" indent="0" id="2473127536061"  name="thread" value="2473127536061" onclick="toggleSelect(this.form, 'all', 'thread'); highlightOn2('row2473127536061', this);" />
+</td>
+<td align="left" class="notoppad" width="1%">
+
+<img src="/webct/images/shim.gif" width="1" height="1" border="0" alt=""  align="absmiddle" />
+
+</td>
+<td align="left" width="39%" class="notoppad">
+
+
+
+
+<label for="2473127536061">
+<a href="javascript:isMsgPreview('newMessageThread.dowebct?discussionaction=viewMessage&messageid=2473127536061&topicid=2466087128111&refreshPage=false&sourcePage=',2473127536061)" title="Link opens in a new window">
+CS122 not on my MapleTA list</a>
+</label>
+
+
+
+
+
+</td>
+
+<td>
+
+&nbsp;
+
+</td>
+
+
+<td>
+
+&nbsp;
+
+</td>
+
+
+
+
+<td nowrap="nowrap" valign="top">
+
+<a href="Javascript:setGlobalParametersFordiscussionMemberMenuForNonGradeableTopics('discussionMemberMenuForNonGradeableTopics', '2025189359011'); showmenu('discussionMemberMenuForNonGradeableTopics-5875506813680081988', 'discussionMemberMenuForNonGradeableTopics_SSTU',1,0);" name="discussionMemberMenuForNonGradeableTopics-5875506813680081988link" title="View PeopleLink Options for this User"  >Nicholas Plante</a><a href="Javascript:setGlobalParametersFordiscussionMemberMenuForNonGradeableTopics('discussionMemberMenuForNonGradeableTopics', '2025189359011'); showmenu('discussionMemberMenuForNonGradeableTopics-5875506813680081988', 'discussionMemberMenuForNonGradeableTopics_SSTU',1,0);" name="discussionMemberMenuForNonGradeableTopics-5875506813680081988link" title="View PeopleLink Options for this User"  class="inline2"><img src="/webct/images/conarrow2.gif"  border="0" id="discussionMemberMenuForNonGradeableTopics-5875506813680081988img"  align="absmiddle" alt="View PeopleLink Options for this User"></a>
+
+</td>
+
+<td nowrap="nowrap">January 13, 2012 10:31 AM</td>
+</tr>
+
+
+
+
+
+
+<tr id="row2472466340141"  onmouseover="highlightOn(this);" onmouseout="highlightOff(this);">
+
+<td width="1%" nowrap="nowrap"  align="center" class="notoppad">
+<input type="checkbox" indent="0" id="2472466340141"  name="thread" value="2472466340141" onclick="toggleSelect(this.form, 'all', 'thread'); highlightOn2('row2472466340141', this);" />
+</td>
+<td align="left" class="notoppad" width="1%">
+
+
+<a href="javascript:expandCollapse(',2472466340141')" title="Expand"><img src="/webct/discussion/images/om_menu_tee_plus2.gif" width="18" height="22" border="0" alt="Expand" align="absmiddle" /></a>
+
+
+</td>
+<td align="left" width="39%" class="notoppad">
+
+
+
+
+<label for="2472466340141">
+<a href="javascript:isMsgPreview('newMessageThread.dowebct?discussionaction=viewMessage&messageid=2472466340141&topicid=2466087128111&refreshPage=false&sourcePage=',2472466340141)" title="Link opens in a new window">
+Reading</a>
+</label>
+
+
+
+
+
+<a href="javascript:displayThread('2472466340141','2466087128111')" title="Display Complete Thread in a New Window"><img src="/webct/discussion/images/small_thread_prev.gif" align="absmiddle" alt="Display Complete Thread in a New Window" border="0" /></a>
+
+</td>
+
+<td>
+
+&nbsp;
+
+</td>
+
+
+<td>
+
+2
+
+
+</td>
+
+
+
+
+<td nowrap="nowrap" valign="top">
+
+<a href="Javascript:setGlobalParametersFordiscussionMemberMenuForNonGradeableTopics('discussionMemberMenuForNonGradeableTopics', '2008286636011'); showmenu('discussionMemberMenuForNonGradeableTopics4051304435277795437', 'discussionMemberMenuForNonGradeableTopics_SSTU',1,0);" name="discussionMemberMenuForNonGradeableTopics4051304435277795437link" title="View PeopleLink Options for this User"  >Hardip Singh</a><a href="Javascript:setGlobalParametersFordiscussionMemberMenuForNonGradeableTopics('discussionMemberMenuForNonGradeableTopics', '2008286636011'); showmenu('discussionMemberMenuForNonGradeableTopics4051304435277795437', 'discussionMemberMenuForNonGradeableTopics_SSTU',1,0);" name="discussionMemberMenuForNonGradeableTopics4051304435277795437link" title="View PeopleLink Options for this User"  class="inline2"><img src="/webct/images/conarrow2.gif"  border="0" id="discussionMemberMenuForNonGradeableTopics4051304435277795437img"  align="absmiddle" alt="View PeopleLink Options for this User"></a>
+
+</td>
+
+<td nowrap="nowrap">January 12, 2012 6:35 PM</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+<tr id="row2472394518051"  onmouseover="highlightOn(this);" onmouseout="highlightOff(this);">
+
+<td width="1%" nowrap="nowrap"  align="center" class="notoppad">
+<input type="checkbox" indent="0" id="2472394518051"  name="thread" value="2472394518051" onclick="toggleSelect(this.form, 'all', 'thread'); highlightOn2('row2472394518051', this);" />
+</td>
+<td align="left" class="notoppad" width="1%">
+
+
+<a href="javascript:expandCollapse(',2472394518051')" title="Expand"><img src="/webct/discussion/images/om_menu_tee_plus2.gif" width="18" height="22" border="0" alt="Expand" align="absmiddle" /></a>
+
+
+</td>
+<td align="left" width="39%" class="notoppad">
+
+
+
+
+<label for="2472394518051">
+<a href="javascript:isMsgPreview('newMessageThread.dowebct?discussionaction=viewMessage&messageid=2472394518051&topicid=2466087128111&refreshPage=false&sourcePage=',2472394518051)" title="Link opens in a new window">
+Quizlet 1- Question 5</a>
+</label>
+
+
+
+
+
+<a href="javascript:displayThread('2472394518051','2466087128111')" title="Display Complete Thread in a New Window"><img src="/webct/discussion/images/small_thread_prev.gif" align="absmiddle" alt="Display Complete Thread in a New Window" border="0" /></a>
+
+</td>
+
+<td>
+
+&nbsp;
+
+</td>
+
+
+<td>
+
+2
+
+
+</td>
+
+
+
+
+<td nowrap="nowrap" valign="top">
+
+<a href="Javascript:setGlobalParametersFordiscussionMemberMenuForNonGradeableTopics('discussionMemberMenuForNonGradeableTopics', '1979250043011'); showmenu('discussionMemberMenuForNonGradeableTopics6310636491780702859', 'discussionMemberMenuForNonGradeableTopics_SSTU',1,0);" name="discussionMemberMenuForNonGradeableTopics6310636491780702859link" title="View PeopleLink Options for this User"  >Shawn Mays</a><a href="Javascript:setGlobalParametersFordiscussionMemberMenuForNonGradeableTopics('discussionMemberMenuForNonGradeableTopics', '1979250043011'); showmenu('discussionMemberMenuForNonGradeableTopics6310636491780702859', 'discussionMemberMenuForNonGradeableTopics_SSTU',1,0);" name="discussionMemberMenuForNonGradeableTopics6310636491780702859link" title="View PeopleLink Options for this User"  class="inline2"><img src="/webct/images/conarrow2.gif"  border="0" id="discussionMemberMenuForNonGradeableTopics6310636491780702859img"  align="absmiddle" alt="View PeopleLink Options for this User"></a>
+
+</td>
+
+<td nowrap="nowrap">January 12, 2012 6:03 PM</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Mini-Profile
+
+
+
+<img src="/webct/images/me.gif" align="absmiddle" alt="My Personal Picture" />
+
+
+
+
+<div class="prolabel"><label>First name:</label></div>
+<div class="procontent">
+<table class="clear" cellspacing="0" cellpadding="0"><tr><td width="90%">
+Nicholas
+</td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+View single post
+
+
+
+
+
+
+<b>Subject:</b> CS122 not on my MapleTA list
+
+
+
+
+
+<b>Topic:</b> Default Topic
+
+
+
+
+<a href="Javascript:setGlobalParametersFordiscussionMemberMenuForNonGradeableTopics('discussionMemberMenuForNonGradeableTopics', '2025189359011'); showmenu('discussionMemberMenuForNonGradeableTopics7297534339270931430', 'discussionMemberMenuForNonGradeableTopics_SSTU',1,0);" name="discussionMemberMenuForNonGradeableTopics7297534339270931430link" title="View PeopleLink Options for this User"  >Nicholas Plante</a><a href="Javascript:setGlobalParametersFordiscussionMemberMenuForNonGradeableTopics('discussionMemberMenuForNonGradeableTopics', '2025189359011'); showmenu('discussionMemberMenuForNonGradeableTopics7297534339270931430', 'discussionMemberMenuForNonGradeableTopics_SSTU',1,0);" name="discussionMemberMenuForNonGradeableTopics7297534339270931430link" title="View PeopleLink Options for this User"  class="inline2"><img src="/webct/images/conarrow2.gif"  border="0" id="discussionMemberMenuForNonGradeableTopics7297534339270931430img"  align="absmiddle" alt="View PeopleLink Options for this User"></a>
+
+
+
+
+<b><b>Date:</b></b> January 13, 2012 10:31 AM<br />
+
+
+
+
+
+
+
+
+
+<div class="entrytext">
+
+<div>
+
+
+Would anyone know why CS122 is not showing up on my list of registered classes on MapleTA.cs.drexel.edu&#63; I&#39;m logging into my own account and I AM registered for CS122 on Mondays, but I recently changed from Wednesday to Monday. Thanks for the help,<br/><br/>Nick Plante
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<a href="/webct/urw/tp2466051976111.lc2459371910121/newMessageThread.dowebct?discussionaction=viewMessage&messageid=2474308502021&topicid=2466087128111" onClick="closing=false">Next Message</a>
+
+
+
+
+
+
+
+
+
+<a class="actionlight" href="/webct/urw/tp2466051976111.lc2459371910121/compiledMessageThreadView.dowebct?compileaction=displayCompleteThread&messageid=2473127536061&topicid=2466087128111&areaid=-1">Display Complete Thread</a>&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+<td>
+
+<img src="/webct/discussion/images/om_menu_tee_minus2.gif" border="0" alt="" align="absmiddle"  />
+
+
+
+
+
+CS122 not on my MapleTA list
+
+
+
+
+</td>
+<!--rating-->
+
+</td>
+<td>
+
+<a href="Javascript:setGlobalParametersFordiscussionMemberMenuForNonGradeableTopics('discussionMemberMenuForNonGradeableTopics', '2025189359011'); showmenu('discussionMemberMenuForNonGradeableTopics-116957362353354438', 'discussionMemberMenuForNonGradeableTopics_SSTU',1,0);" name="discussionMemberMenuForNonGradeableTopics-116957362353354438link" title="View PeopleLink Options for this User"  >Nicholas Plante</a><a href="Javascript:setGlobalParametersFordiscussionMemberMenuForNonGradeableTopics('discussionMemberMenuForNonGradeableTopics', '2025189359011'); showmenu('discussionMemberMenuForNonGradeableTopics-116957362353354438', 'discussionMemberMenuForNonGradeableTopics_SSTU',1,0);" name="discussionMemberMenuForNonGradeableTopics-116957362353354438link" title="View PeopleLink Options for this User"  class="inline2"><img src="/webct/images/conarrow2.gif"  border="0" id="discussionMemberMenuForNonGradeableTopics-116957362353354438img"  align="absmiddle" alt="View PeopleLink Options for this User"></a>
+
+</td>
+<td>January 13, 2012 10:31 AM</td>
+</tr>
+
+
+<tr>
+
+<td>
+
+<table cellspacing="0" cellpadding="0" border="0" class="clear" summary="layout">
+<tr class="clear">
+
+
+<td valign="top"><img src="/webct/discussion/images/om_menu_last.gif" border="0" alt="" align="absmiddle"  /></td>
+
+
+
+<td width="100%">
+
+
+<strong>
+
+
+
+<a href="/webct/urw/tp2466051976111.lc2459371910121/newMessageThread.dowebct?discussionaction=viewMessage&messageid=2474308502021&topicid=2466087128111&refreshPage=true&sourcePage=">Re:CS122 not on my MapleTA list </a>
+
+
+<span class="alert"><b>(New)</b></span>
+
+
+</strong>
+
+
+</td>
+</tr>
+</table>
+
+</td>
+<!--rating-->
+
+</td>
+<td>
+
+<a href="Javascript:setGlobalParametersFordiscussionMemberMenuForNonGradeableTopics('discussionMemberMenuForNonGradeableTopics', '685793962011'); showmenu('discussionMemberMenuForNonGradeableTopics-8304006679832810501', 'discussionMemberMenuForNonGradeableTopics_STEA',1,0);" name="discussionMemberMenuForNonGradeableTopics-8304006679832810501link" title="View PeopleLink Options for this User"  >Justine Malandra</a><a href="Javascript:setGlobalParametersFordiscussionMemberMenuForNonGradeableTopics('discussionMemberMenuForNonGradeableTopics', '685793962011'); showmenu('discussionMemberMenuForNonGradeableTopics-8304006679832810501', 'discussionMemberMenuForNonGradeableTopics_STEA',1,0);" name="discussionMemberMenuForNonGradeableTopics-8304006679832810501link" title="View PeopleLink Options for this User"  class="inline2"><img src="/webct/images/conarrow2.gif"  border="0" id="discussionMemberMenuForNonGradeableTopics-8304006679832810501img"  align="absmiddle" alt="View PeopleLink Options for this User"></a>
+
+</td>
+<td>January 14, 2012 12:14 PM</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+View thread
+
+
+
+
+
+<div class="entrydiv">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<b>Subject:</b> Reading
+<b>Topic:</b> Default Topic
+<b>Author:</b> Hardip Singh
+<b>Date:</b> January 12, 2012 6:35 PM
+
+
+<div class="userhtml">
+
+
+I&#39;m having trouble opening up the pre-lab reading. Can anybody help me&#63; Like when I click on the blue link, it just keeps loading, but nothing shows up.
+
+</div>
+
+
+<a class="actionlight" href="Javascript:replyMessage('0','2466087128111','2472466340141');" title="Link opens in a new window">Reply</a>
+
+
+
+
+
+
+
+
+
+
+
+
+containAttachments = false;
+compliedMessageIds = '2472466340141,2472479193141';
+attachmentsIds = "";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GRADES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td scope="row" nowrap="nowrap"><b>Course:</b></td>
+<td colspan="3">CS-122-XLIST-201125</td>
+</tr>
+
+
+
+
+
+
+<b><i>No grades released.</i></b>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ASSIGNMENTS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul title="Assignments Navigation">
+<li class="active" title="Current assignments location"><h2>Inbox</h2></li>
+<li><a href="/webct/urw/tp2466051976111.lc2459371910121/studentViewSubmissions.dowebct?viewType=OUTBOX" title="Submitted">Submitted</a></li>
+<li><a href="/webct/urw/tp2466051976111.lc2459371910121/studentViewSubmissions.dowebct?viewType=COMPLETED" title="Graded">Graded</a></li>
+<li><a href="/webct/urw/tp2466051976111.lc2459371910121/studentViewSubmissions.dowebct?viewType=PUBLISHED" title="Published">Published</a></li>
+</ul
+
+
+
+
+
+
+
+
+<span class="helptext">The Inbox tab contains new assignments or submissions returned to you for editing.</span>
+
+
+
+
+
+
+
+
+<tr valign="top">
+<td width="1%" valign="top">
+<img width="32" height="32" alt="" border="0" src="/webct/images/xlarge_assignment.gif" />
+</td>
+<td width="99%">
+
+<a href="/webct/urw/tp2466051976111.lc2459371910121/editAssignmentSubmission.dowebct?projectId=2466094012111" title="Edit">
+Lab 1 Backup</a>
+
+
+<a class="inline2" id="contextMenu512922img" title="ActionLinks for this Item" href="javascript:showContextMenu('contextMenu512922','contextMenu512922img', '','Close Menu')"><img src="images/conarrow2.gif" alt="ActionLinks for this Item"></a><div id="contextMenu512922" class="contextdiv"></div>
+<script language="JavaScript" type="text/JavaScript">
+var theMenu = [];
+new MenuItemInfo("Edit","/webct/images/small_edit.gif","","","","");
+theMenu[0] = new MenuItem("Edit","/webct/urw/tp2466051976111.lc2459371910121/editAssignmentSubmission.dowebct?projectId=2466094012111");
+theMenuDefs["contextMenu512922"] = theMenu;
+</script>
+
+<div class="descript"> Status:
+Individual
+
+Not Started
+
+(Due
+
+
+
+
+March 24, 2012 12:00 PM
+
+
+)
+</div>
+<div class="descript">Use this to store a copy of what you&#39;ve finished during lab 1. You can download your work later when you need it.
+
+Your submission will not be graded or checked by any instructor.</div>
+</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+VIEWING ASSINGMNET
+
+
+
+
+
+
+
+
+
+openBox('/webct/urw/tp2466051976111.lc2459371910121/viewSubmissionComments.dowebct?submissionId='+submissionId,'ViewComments',600,500 );
+openBox('/webct/urw/tp2466051976111.lc2459371910121/ContentBrowserAction.dowebct?copySelectedFiles=false&folderID=2090319989091&type=file&multi=true','about',780,560);
+
+
+
+
+
+
+
+
+
+<span>Your location: </span>
+
+
+<a href="/webct/urw/tp2466051976111.lc2459371910121/studentViewSubmissions.dowebct" id="breadcrumb0" target="RIGHTTOOLFRAME">Assignments</a> &#8250;
+<script language="javascript">
+var bcLink = document.getElementById('breadcrumb0');
+if (isTargetValid(this.window,6,bcLink.target) == false) {
+bcLink.target = this.window.name;
+}
+</script>
+
+
+
+
+Edit Submission
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="pagetitlediv">
+<h1 style="display:inline;">
+Edit Submission: Lab 1 Backup
+(Attempt 1 )</h1>
+
+</div>
+<div class="detailsdiv_notoggle clearfix">
+<div class="left">
+<p><span>Due Date:</span> March 24, 2012 12:00 PM</p>
+<p><span>Type:</span>
+
+Work individually
+</p>
+
+
+
+</div>
+<div class="right">
+<p><span>Status:</span>
+In Progress (Attempt 1)
+
+</p>
+</div>
+</div>
+<br>
+<div class="entrydiv">
+<h2>Instructions:</h2>
+<div class="entrytext">
+
+
+
+<br/>
+
+<div class="attachmentdiv">
+
+Attachments:
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!-- ctb/coursemenu.jsp -->
+<!-- applicationframework/CommonHeader.jspi -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- applicationframework/contextPath.jspi -->
+
+
+
+
+
+
+
+
+
+
+<html dir="ltr">
+<head>
+
+<title>Course Menu</title>
+
+
+
+<!-- applicationframework/HeaderCSS.jspi -->
+
+
+<script language="javascript" type="text/javascript" src="/webct/libraryjs.dowebct?locale=en_US"></script>
+<script type="text/javascript">
+function navJump(){
+var appFrame = getApplicationFrame();
+if(appFrame){
+if(appFrame.TOOLFRAME.LEFTTOOLFRAME){
+if(appFrame.TOOLFRAME.LEFTTOOLFRAME.document.getElementById("cthomepage")) appFrame.TOOLFRAME.LEFTTOOLFRAME.focus();
+else appFrame.TOOLFRAME.focus();
+}else if(appFrame.TOOLFRAME.EXPLORER_LEFT){
+appFrame.TOOLFRAME.EXPLORER_LEFT.focus();
+}else appFrame.TOPAPPFRAME.focus();
+}
+}
+function contentJump(){
+var appFrame = getApplicationFrame();
+if(appFrame){
+if(appFrame.TOOLFRAME.RIGHTTOOLFRAME) appFrame.TOOLFRAME.RIGHTTOOLFRAME.focus();
+else if(appFrame.TOOLFRAME.EXPLORER_RIGHT) appFrame.TOOLFRAME.EXPLORER_RIGHT.focus();
+else appFrame.TOOLFRAME.focus();
+}
+}
+function hideLinks(){
+var appFrame = getApplicationFrame();
+if(appFrame){
+if(window.name=="LEFTTOOLFRAME" || window.name=="EXPLORER_LEFT")document.getElementById("jumpLinks").removeChild(document.getElementById("navijump"));
+if(window.name=="RIGHTTOOLFRAME" || window.name=="EXPLORER_RIGHT")document.getElementById("jumpLinks").removeChild(document.getElementById("contjump"));
+}
+else{
+document.getElementById("jumpLinks").removeChild(document.getElementById("navijump"))
+document.getElementById("jumpLinks").removeChild(document.getElementById("contjump"))
+}
+}
+</script>
+<link rel="stylesheet" href="/webct/css/styles.jsp?locale=en_US&Id=2463021123071&colorSetId=default&fontSize=.8em&fontType=courier" type="text/css" />
+<div id="jumpLinks">
+<a href="Javascript:navJump()" id="navijump" accesskey="1" title="Jump to Navigation Frame" class="hideoff">Jump to Navigation Frame</a>
+<a href="Javascript:contentJump()" id="contjump" accesskey="2" title="Jump to Content Frame" class="hideoff">Jump to Content Frame</a>
+</div>
+<script type="text/javascript">hideLinks()</script>
+
+<script language="javascript" type="text/javascript" src="/webct/libraryjs.dowebct?locale=en_US"></script>
+<script language=Javascript type="text/javascript" src="/webct/jslib/sniffer.js"></script>
+<script language="javascript" type="text/javascript" src="/webct/coursemenujslibrary.dowebct?locale=en_US"></script>
+
+<script language="javascript" type="text/javascript" src="/webct/urw/tp2463021123071.lc2398206873131/contextsensitivemenu/PopItLibrary2.js"></script>
+
+
+
+
+<script language="JavaScript">
+var originalStyles = [];
+var COURSE_MENU_SYNCHRONIZER = new CourseMenuSynchronizer();
+var ie6 = (is_ie && (is_major == 4) && (agt.indexOf("msie 6.")!=-1) );
+var ns6=navigator.userAgent.indexOf("Netscape6")>-1;
+var saf=navigator.userAgent.indexOf("Safari")>-1;
+var extended=true;
+var placearrow=0;
+var framewidth=50;
+var scrollshown="";
+var menuWidth=10;
+var prevFrameWidth = 0;
+var scrollbarexpanded = false;
+var arrowdiv="";
+var thetable="";
+function init(){
+parent.document.getElementById("LEFTTOOLFRAME").noResize=false;
+arrowdiv=document.getElementById("flyout");
+arrowdiv.stl=ns6?arrowdiv:arrowdiv.style;
+thetable=document.getElementById("menutable");
+
+getVars();
+COURSE_MENU_SYNCHRONIZER.waitForGetVars(true);
+
+COURSE_MENU_SYNCHRONIZER.notifyCallFinished("init");
+
+}
+function closeinit(){
+
+framewidth=menuWidth;
+parent.document.body.cols = framewidth+ ',*';
+
+}
+function colCourseMenu() {
+if (COURSE_MENU_SYNCHRONIZER.isDoneLoading()) {
+if (extended != false) {
+clickPull();
+}
+}
+}
+function expCourseMenu() {
+if (extended == false) {
+clickPull();
+}
+}
+function checkResize(){
+adjustwidth("checkResize");
+}
+function getVars(){
+courseMenuExpanded = getClientSideSetting("COURSE_MENU_EXPANDED");
+thetable.offsetWidth;
+
+menuWidth=ie&&mac?thetable.offsetWidth+10:ie6?thetable.offsetWidth:document.documentElement.scrollWidth;
+if (courseMenuExpanded == "false") {
+document.images["arrowimg"].src="/webct/urw/tp2463021123071.lc2398206873131/ctb/images/arrows.gif"
+document.getElementById('menutable').style.overflow="hidden";
+
+framewidth=18;
+
+scrollbarexpanded = false;
+
+arrowdiv.stl.left="0px";
+document.getElementById('menutable').style.width="0px";
+
+parent.document.body.cols = framewidth+ ',*';
+if (document.getElementById("ctlegend") != null) {
+document.getElementById("ctlegend").style.display="none";
+}
+if (document.getElementById('courseoutline') != null) {
+document.getElementById('courseoutline').style.display="none";
+}
+extended=false;
+storeClientSideSetting("COURSE_MENU_EXPANDED", "false");
+}else{
+framewidth=menuWidth+20;
+scrollbarexpanded = false;
+parent.document.body.cols = framewidth+ ',*';
+arrowdiv.stl.left=menuWidth+1+"px";
+document.getElementById("menutable").style.width=menuWidth+"px";
+}
+parent.document.getElementById("LEFTTOOLFRAME").noResize=true;
+COURSE_MENU_SYNCHRONIZER.notifyCallFinished("getVars");
+}
+function clickPull(){
+
+arrowdiv=document.getElementById("flyout");
+arrowdiv.stl=ns6?arrowdiv:arrowdiv.style;
+if (extended){
+document.images["arrowimg"].src="/webct/urw/tp2463021123071.lc2398206873131/ctb/images/arrows.gif"
+document.getElementById('menutable').style.overflow="hidden";
+if (document.getElementById('courseoutline') != null) {
+document.getElementById('courseoutline').style.display="none";
+}
+if (document.getElementById("ctlegend") != null) {
+document.getElementById("ctlegend").style.display="none";
+}
+
+framewidth=18;
+
+scrollbarexpanded = false;
+parent.document.body.cols = framewidth+ ',*';
+
+arrowdiv.stl.left="0px";
+document.getElementById('menutable').style.width="0px";
+
+extended=false;
+storeClientSideSetting("COURSE_MENU_EXPANDED", "false");
+}else{
+framewidth=menuWidth+20;
+scrollbarexpanded = false;
+parent.document.body.cols = framewidth+ ',*';
+document.getElementById("menutable").style.width=menuWidth+"px";
+arrowdiv.stl.left=-50+'px';
+document.getElementById('menutable').style.overflow="visible";
+document.images["arrowimg"].src="/webct/urw/tp2463021123071.lc2398206873131/ctb/images/arrows2.gif";
+if (document.getElementById("ctlegend") != null) {
+document.getElementById("ctlegend").style.display="block";
+}
+if(document.images["courseoutlineimg"] != null) {
+if(document.images["courseoutlineimg"].src.indexOf("cm_close.gif")!=-1) {
+document.getElementById('courseoutline').style.display="block";
+}
+}
+extended=true;
+
+arrowdiv.stl.left=menuWidth+1+'px';
+storeClientSideSetting("COURSE_MENU_EXPANDED", "true");
+}
+
+}
+function checkheight(){
+thetable=document.getElementById("menutable");
+windowHeight=ie? document.documentElement.clientHeight : window.innerHeight;
+windowScrollHeight=ie&&mac?thetable.offsetHeight:document.body.scrollHeight;
+if (windowScrollHeight<=windowHeight){
+scrollshown="false";
+return false;
+}
+if (windowScrollHeight>windowHeight){
+scrollshown="true";
+return true;
+}
+}
+var runningresize=false;
+function adjustwidth(loadvar){
+if(loadvar=="expcoll")runningresize=true;
+if(loadvar=="checkResize" && runningresize){}
+else{
+if (scrollbarexpanded == false && checkheight()){
+framewidth+=17;
+scrollbarexpanded = true;
+
+parent.document.body.cols = framewidth+ ',*';
+
+}
+else if (scrollbarexpanded == true && !checkheight()){
+framewidth-=17;
+scrollbarexpanded = false;
+
+parent.document.body.cols = framewidth+ ',*';
+
+}
+}
+runningresize=false;
+}
+function expcolldefault(menuid) {
+
+if (menuid == 'courseoutline') {
+if(getClientSideSetting(menuid) == null) {
+
+document.getElementById(menuid).style.display="none";
+
+} else if(getClientSideSetting(menuid) == 'collapsed') {
+document.getElementById(menuid).style.display="none";
+} else if(getClientSideSetting(menuid) == 'expanded') {
+document.getElementById(menuid).style.display="block";
+}
+} else {
+document.getElementById(menuid).style.display="block";
+}
+updateExpandedCollapsedState(menuid);
+}
+function expcoll(menuid, legendvar){
+if (document.getElementById(menuid).style.display=="block"){
+document.getElementById(menuid).style.display="none";
+if(legendvar && document.getElementById("ctlegend"))document.getElementById("ctlegend").style.display="none"
+
+storeClientSideSetting(menuid, 'collapsed');
+}
+else{
+document.getElementById(menuid).style.display="block";
+if(legendvar && document.getElementById("ctlegend"))document.getElementById("ctlegend").style.display="block"
+
+storeClientSideSetting(menuid, 'expanded');
+}
+updateExpandedCollapsedState(menuid);
+if(menuid=="courseoutline" && document.getElementById(menuid).style.display=="block" && extended==false) {
+clickPull();
+}
+adjustwidth("expcoll");
+}
+function updateExpandedCollapsedState(menuid) {
+imgid=menuid+"img";
+if (document.getElementById(menuid).style.display=="block"){
+if(menuid!="courseoutline"){
+document.images[imgid].src="/webct/urw/tp2463021123071.lc2398206873131/ctb/images/arrow_collapse.gif";
+document.images[imgid].alt='Collapse this area';
+document.images[imgid].title='Collapse this area';
+} else {
+document.images[imgid].src="/webct/urw/tp2463021123071.lc2398206873131/images/cm_close.gif";
+document.images[imgid].title="Collapse Course Content Map";
+document.getElementById("exptd").className="opencm";
+}
+} else {
+if(menuid!="courseoutline"){
+document.images[imgid].src="/webct/urw/tp2463021123071.lc2398206873131/ctb/images/arrow_expand.gif";
+document.images[imgid].alt='Expand this area';
+document.images[imgid].title='Expand this area';
+} else {
+document.images[imgid].src="/webct/urw/tp2463021123071.lc2398206873131/images/cm_open.gif";
+document.images[imgid].title="Expand Course Content Map";
+document.getElementById("exptd").className="closedcm";
+}
+}
+}
+function refreshCourseMenu() {
+storeClientSideSetting("RELOADING", "true");
+window.location = "/webct/urw/tp2463021123071.lc2398206873131/courseMenu.dowebct?tab=view&refreshTopFrame&t1326567124770";
+}
+function refreshTopFrame() {
+if (parent.parent.TOPAPPFRAME != null && parent.parent.TOPAPPFRAME.refreshTopFrame!=null) {
+parent.parent.TOPAPPFRAME.refreshTopFrame("view");
+}
+}
+function CourseMenuSynchronizer() {
+var doWaitForGetVars = true;
+var callGetVarsFinished = false;
+var callInitFinished = false;
+}
+CourseMenuSynchronizer.prototype.waitForGetVars = function(doWaitForGetVars) {
+this.doWaitForGetVars = doWaitForGetVars;
+}
+CourseMenuSynchronizer.prototype.notifyCallFinished = function(functionName) {
+if (functionName = "getVars") {
+this.callGetVarsFinished = true;
+}
+if (functionName = "init") {
+this.callInitFinished = true;
+}
+}
+CourseMenuSynchronizer.prototype.isDoneLoading = function() {
+if (this.doWaitForGetVars == true && this.callGetVarsFinished == true && this.callInitFinished) {
+return true;
+}
+if (this.doWaitForGetVars == false && this.callInitFinished) {
+return true;
+}
+return false;
+}
+function shrinkFrameToZero() {
+parent.document.body.cols = '0,*';
+}
+function initCourseMenuHighlight() {
+
+}
+</script>
+</head>
+
+
+<body onResize="checkResize()" style="position:relative;" onLoad="init(); initCourseMenuHighlight();" onunLoad="closeinit()" class="menubg">
+<div id="menutable" class="flytable">
+
+
+
+<!-- ctb/palette.jspi -->
+
+
+
+
+
+
+
+
+
+
+
+<div class="flytitle" onClick="expcoll('courseoutlinepalette')" ><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td nowrap="nowrap"><div class="flytitletext"><h2><a href="#"><img src="/webct/ctb/images/arrow_collapse.gif" name="courseoutlinepaletteimg" align="absmiddle" border="0" title="Collapse this area" alt="Collapse this area">&nbsp;&nbsp;Course Content Map&nbsp;</a></h2></div></td><td align="right" valign="top"><img src="/webct/ctb/images/menu_back_right.gif" border="0" alt=""></td></tr></table></div>
+
+
+<div id="courseoutlinepalette" class="expmenu">
+<!-- ctb/courseoutlinepalette.jspi -->
+
+
+
+
+
+
+
+<!-- ctb/xtree.jspi -->
+<script language="javascript">
+var webFXTreeConfig = {
+rootIcon        : '',
+openRootIcon    : '',
+folderIcon      : '',
+openFolderIcon  : '',
+fileIcon        : '',
+iIcon           : '/webct/urw/tp2463021123071.lc2398206873131/images/om_menu_line.gif',
+lIcon           : '/webct/urw/tp2463021123071.lc2398206873131/images/om_menu_last.gif',
+lMinusIcon      : '/webct/urw/tp2463021123071.lc2398206873131/images/om_menu_last_minus.gif',
+lPlusIcon       : '/webct/urw/tp2463021123071.lc2398206873131/images/om_menu_last_plus.gif',
+tIcon           : '/webct/urw/tp2463021123071.lc2398206873131/images/om_menu_tee.gif',
+tMinusIcon      : '/webct/urw/tp2463021123071.lc2398206873131/images/om_menu_tee_minus.gif',
+tPlusIcon       : '/webct/urw/tp2463021123071.lc2398206873131/images/om_menu_tee_plus.gif',
+blankIcon       : '/webct/images/shim.gif',
+defaultText     : 'Tree Item',
+defaultAction   : 'javascript:void(0);',
+defaultBehavior : 'classic',
+usePersistence	: true
+};
+/*** Ajax related functions to persist nodes state on the sever side (As server cookies replacing browser cookies)***/
+function getCookies(){
+retrieveUrl("/webct/urw/tp2463021123071.lc2398206873131/genericServerCookies.dowebct?action=getCookies", processFuncGet, false);
+}
+function setCookies(key,value){
+retrieveUrl("/webct/urw/tp2463021123071.lc2398206873131/genericServerCookies.dowebct?action=setCookies&key="+key+"&value="+value, processFuncSet, true);
+}
+function processFuncGet() {
+if(req.readyState ==4) {
+if (req.status == 200) {
+returnValue = req.responseText;
+WebFXCookie.prototype.cookies = returnValue;
+}else{
+//alert("Getting bad response from the server");
+}
+}
+}
+function processFuncSet() {
+}
+/*** End of Ajax Related Functions ***/
+</script>
+<script language="javascript" type="text/javascript" src="/webct/jslib/ajaxLibrary.js"></script>
+
+<script language="javascript" src="/webct/ctb/xtree.js"></script>
+
+<table cellspacing="0" cellpadding="0" border="0" summary="layout">
+<tr><td>
+
+<script language = "javascript">
+var nodes = [];
+var tree = new WebFXTree("Root");
+var tree10 = new WebFXTreeItem('ENGR 102 course website',  '/webct/urw/tp2463021123071.lc2398206873131/viewCourseMapItemDispatcher.dowebct?linkId=2463021216071&componentId=2463021135071&componentType=URL_TYPE&tab=view&targetFrame=_new');
+tree10.target = '_new';
+tree.add(tree10);
+var tree11 = new WebFXTreeItem('ENGR 102 Syllabus',  '/webct/urw/tp2463021123071.lc2398206873131/viewCourseMapItemDispatcher.dowebct?linkId=2463021217071&componentId=2463021134071&componentType=URL_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree11.target = 'RIGHTTOOLFRAME';
+tree.add(tree11);
+var tree12 = new WebFXTreeItem('ENGR 102 Personnel ',  '/webct/urw/tp2463021123071.lc2398206873131/viewCourseMapItemDispatcher.dowebct?linkId=2463021218071&componentId=2463021133071&componentType=URL_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree12.target = 'RIGHTTOOLFRAME';
+tree.add(tree12);
+var tree13 = new WebFXTreeItem('Engineering_Notebook',  '/webct/urw/tp2463021123071.lc2398206873131/viewCourseMapItemDispatcher.dowebct?linkId=2463021215071&componentId=2463021145071&componentType=PAGE_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree13.target = 'RIGHTTOOLFRAME';
+tree.add(tree13);
+
+document.write(tree);
+</script>
+<img src="/webct/images/shim.gif" alt="" width="1" height="5" /><br />
+</td></tr>
+</table>
+
+
+</ul>
+</div>
+
+<script language="Javascript">expcolldefault('courseoutlinepalette');</script>
+
+
+
+
+
+
+
+</div>
+<img src="/webct/images/shim.gif" alt="" width="1" height="5"><br />
+<div id="flyout" class="flypull" onClick="clickPull()">
+<table cellpadding="0" cellspacing="0" border="0" height="90%">
+<tr>
+<td align="center">
+
+<a href="#" title="Click to Expand or Collapse Menu Area"><img src="/webct/ctb/images/arrows2.gif" name="arrowimg" align="absmiddle" border="0" title="Click to Expand or Collapse Menu Area" alt="Click to Expand or Collapse Menu Area"></a><br />
+
+<img src="/webct/images/shim.gif" border="0" width="18" height="20" align="absmiddle" alt=""/>
+</td>
+</tr>
+</table>
+</div>
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

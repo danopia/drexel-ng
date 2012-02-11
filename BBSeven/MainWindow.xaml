@@ -1,0 +1,36 @@
+﻿<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Bb Seven" Height="425" Width="552" xmlns:my="clr-namespace:BBSeven" MinWidth="200" xmlns:my1="clr-namespace:ShiftingPanes;assembly=ShiftingPanes">
+    <my1:Throbbable Name="Throbber">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="454*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Label Content="Daniel Lamando" Name="UserLabel" VerticalAlignment="Center" Grid.Column="1" />
+            <Expander Height="23" Name="BackButton" ExpandDirection="Left" IsEnabled="False" />
+            <Button Grid.Column="2" Name="Gear">
+                <Button.BorderBrush>
+                    <SolidColorBrush />
+                </Button.BorderBrush>
+                <Button.Background>
+                    <SolidColorBrush />
+                </Button.Background>
+                <Button.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Font" Name="FontButton" />
+                        <MenuItem Header="About" Name="AboutButton" />
+                    </ContextMenu>
+                </Button.ContextMenu>
+                <Image Source="/BBSeven;component/Images/gear.png" />
+            </Button>
+        </Grid>
+        <my1:ShiftingView Grid.Row="1" Name="ShiftingView" />
+    </my1:Throbbable>
+</Window>
