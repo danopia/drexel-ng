@@ -24,7 +24,7 @@
                 </Button.Background>
                 <Button.ContextMenu>
                     <ContextMenu>
-                        <MenuItem Header="Font" Name="FontButton" />
+                        <MenuItem Header="Settings" Name="SettingsButton" />
                         <MenuItem Header="About" Name="AboutButton" />
                     </ContextMenu>
                 </Button.ContextMenu>

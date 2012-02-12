@@ -72,9 +72,8 @@ Class MainWindow
         Gear.ContextMenu.IsOpen = True
     End Sub
 
-    Private Sub FontButton_Click(sender As Object, e As System.Windows.RoutedEventArgs) Handles FontButton.Click
-        Dim Pane As New ShiftingPanes.FontPane
-        MsgBox(UserLabel.FontSize)
-        ShiftingView.PushPane(Pane)
+    Private Sub SettingsButton_Click(sender As Object, e As System.Windows.RoutedEventArgs) Handles SettingsButton.Click
+        Dim Window As New SettingsWindow
+        Window.ShowDialog()
     End Sub
 End Class

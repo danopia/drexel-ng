@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="InterfacePane"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" d:DesignHeight="270" d:DesignWidth="394">
+    <StackPanel>
+        <Label Content="Deactivated class behaviour" FontSize="18" />
+        <RadioButton Content="Gray out and keep in original list order" Name="GrayRadio1" GroupName="gray_behavior" Margin="10,2" />
+        <RadioButton Content="Gray out and move to the end of the list" Name="GrayRadio2" GroupName="gray_behavior" Margin="10,2" IsChecked="True" />
+        <RadioButton Content="Remove from the list entirely" Name="GrayRadio3" GroupName="gray_behavior" Margin="10,2" />
+
+        <Label Content="Loading animation" FontSize="18" />
+        <RadioButton Content="None (only fades the window)" Name="LoadRadio1" GroupName="load_behavior" Margin="10,2" />
+        <RadioButton Content="Concentric spinning rings" Name="LoadRadio2" GroupName="load_behavior" Margin="10,2" IsChecked="True" />
+        <RadioButton Content="Static 'loading' text" Name="LoadRadio3" GroupName="load_behavior" Margin="10,2" />
+        <RadioButton Content="Progress bar" Name="LoadRadio4" GroupName="load_behavior" Margin="10,2" />
+    </StackPanel>
+</UserControl>
