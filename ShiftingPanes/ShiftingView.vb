@@ -35,6 +35,15 @@ Public Class ShiftingView
         End Get
     End Property
 
+    Protected Friend Sub Recycle()
+        For i As Integer = _recycling.Count - 1 To 0 Step -1
+            If _recycling(i).Margin.Left >= Me.ActualWidth - 50 Then
+                MainCanvas.Children.Remove(_recycling(i))
+                _recycling.RemoveAt(i)
+            End If
+        Next
+    End Sub
+
     Public Sub PushPane(ByVal NewPane As Pane)
         NewPane.HorizontalAlignment = Windows.HorizontalAlignment.Left
         NewPane.Name = "Pane" & _nextID
@@ -79,6 +88,7 @@ Public Class ShiftingView
         Dim Animation = SetupAnimation()
         Animation.Animate(Pane.MarginProperty, New Thickness(PrimaryPane.Margin.Left, 0, 0, 0), New Thickness(Me.ActualWidth, 0, 0, 0), PrimaryPane.Name)
         Animation.Animate(Pane.MarginProperty, New Thickness(Me.ActualWidth, 0, 0, 0), New Thickness(IIf(SecondaryPane Is Nothing, 0, 200), 0, 0, 0), NewPane.Name)
+        AddHandler Animation.Completed, AddressOf Recycle
         Animation.Start()
 
         _recycling.Add(PrimaryPane)
@@ -93,6 +103,8 @@ Public Class ShiftingView
         ElseIf SecondaryPane Is Nothing Then
             Dim Animation = SetupAnimation()
             Animation.Animate(Pane.MarginProperty, New Thickness(PrimaryPane.Margin.Left, 0, 0, 0), New Thickness(Me.ActualWidth, 0, 0, 0), PrimaryPane.Name)
+
+            AddHandler Animation.Completed, AddressOf Recycle
             Animation.Start()
 
         Else
@@ -109,6 +121,7 @@ Public Class ShiftingView
                 Animation.Animate(Pane.MarginProperty, New Thickness(TertiaryPane.Margin.Left, 0, 0, 0), New Thickness(0, 0, 0, 0), TertiaryPane.Name)
             End If
 
+            AddHandler Animation.Completed, AddressOf Recycle
             Animation.Start()
         End If
 
@@ -147,8 +160,15 @@ Public Class ShiftingView
     End Sub
 
     Private Sub ShiftingView_SizeChanged(ByVal sender As Object, ByVal e As System.Windows.SizeChangedEventArgs) Handles Me.SizeChanged
-        If PrimaryPane Is Nothing Then Return
-
-
+        If PrimaryPane Is Nothing Then
+        ElseIf SecondaryPane Is Nothing Then
+            'PrimaryPane.MinWidth = Me.ActualWidth
+            'PrimaryPane.MaxWidth = Me.ActualWidth
+            PrimaryPane.SetCurrentValue(Pane.WidthProperty, Me.ActualWidth)
+        Else
+            'PrimaryPane.MinWidth = Me.ActualWidth - 200
+            'PrimaryPane.MaxWidth = Me.ActualWidth - 200
+            PrimaryPane.SetCurrentValue(Pane.WidthProperty, Me.ActualWidth - 200)
+        End If
     End Sub
 End Class

@@ -6,6 +6,7 @@ Imports System.Windows.Media
 Public Class AnimationSet
     Protected Friend _parent As FrameworkElement
     Protected Friend WithEvents _storyboard As New Storyboard
+    Public Event Completed(sender As Object, e As EventArgs)
 
     Protected Friend Sub New(ByRef Parent As FrameworkElement, Optional Duration As Double = 1)
         _parent = Parent
@@ -22,7 +23,12 @@ Public Class AnimationSet
     End Property
 
     Public Sub Start()
+        AddHandler _storyboard.Completed, AddressOf OnCompleted
         _storyboard.Begin(_parent)
+    End Sub
+
+    Private Sub OnCompleted(sender As Object, e As EventArgs)
+        RaiseEvent Completed(sender, e)
     End Sub
 
     Public Sub Animate(ByVal [Property] As DependencyProperty, ByVal From As Double, ByVal [To] As Double, Optional ByVal Target As String = Nothing)
