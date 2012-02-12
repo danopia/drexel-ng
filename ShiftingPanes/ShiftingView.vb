@@ -156,6 +156,7 @@ Public Class ShiftingView
     End Sub
 
     Public Sub New()
+        Me.MinWidth = 400
         Me.Content = MainCanvas
     End Sub
 
