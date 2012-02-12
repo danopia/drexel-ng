@@ -36,6 +36,10 @@ Public Class GradesPane
 
         If Source.Grade < 0 Then
             _name.Opacity = 0.5
+        ElseIf Source.OutOf < 0 Then
+            _grade.Content = Source.Grade
+            _grade.Padding = New Thickness(3)
+            _grade.VerticalAlignment = Windows.VerticalAlignment.Top
         Else
             _grade.Content = String.Format("{0} (out of {1})", Source.Grade, Source.OutOf)
             _grade.Padding = New Thickness(3)
