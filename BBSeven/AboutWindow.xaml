@@ -1,0 +1,67 @@
+﻿<Window x:Class="AboutWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    AllowsTransparency="True"
+    Title="About BbSeven" Height="319" Width="474" ResizeMode="NoResize" ShowInTaskbar="False" Topmost="True" WindowStartupLocation="CenterScreen" WindowStyle="None">
+
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.MouseUp">
+            <BeginStoryboard>
+                <Storyboard Name="FadeOut">
+                    <DoubleAnimation
+                                    Storyboard.TargetProperty="Opacity"
+                                    From="1" To="0" Duration="0:0:0.5">
+                        <DoubleAnimation.EasingFunction>
+                            <QuadraticEase />
+                        </DoubleAnimation.EasingFunction>
+                    </DoubleAnimation>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation
+                                Storyboard.TargetProperty="Opacity"
+                                From="0" To="1" Duration="0:0:1">
+                        <DoubleAnimation.EasingFunction>
+                            <QuadraticEase />
+                        </DoubleAnimation.EasingFunction>
+                    </DoubleAnimation>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
+    
+    <Border BorderBrush="Black" BorderThickness="2" CornerRadius="15" Background="White">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="42*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Label Content="Blackboard Seven" HorizontalAlignment="Center" FontSize="48" FontFamily="Segoe Print" Grid.ColumnSpan="2" />
+            <Label Content="Version:" Grid.Row="1" HorizontalAlignment="Right" />
+            <Label Content="0.0.0.0" Grid.Column="1" Grid.Row="1" Name="Version" />
+            <Label Content="Copyright:" Grid.Row="2" HorizontalAlignment="Right" />
+            <TextBlock Grid.Column="1" Grid.Row="2" Name="Copyright" Padding="5" TextWrapping="Wrap">
+                Copyright © Daniel Lamando 2012
+            </TextBlock>
+            <TextBlock Grid.Row="3" Grid.ColumnSpan="2" Padding="5" TextWrapping="Wrap" Margin="50,0">
+                Blackboard Seven is a collaborative effort, developed by Daniel Lamando with input from various
+                Drexel University students. Nathan Massouda was the main tester. Our goal is to make Drexel's
+                online learning services much nicer and more usable.
+            </TextBlock>
+            <Button Content="Close" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Right" Name="CloseBtn" Width="75" IsDefault="True" IsCancel="True" Margin="10" />
+        </Grid>
+    </Border>
+    <Window.Background>
+        <SolidColorBrush />
+    </Window.Background>
+</Window>

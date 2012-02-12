@@ -15,7 +15,7 @@ Imports System.Windows
 <Assembly: AssemblyDescription("BbVista Desktop Client")> 
 <Assembly: AssemblyCompany("Danopia")> 
 <Assembly: AssemblyProduct("BbSeven")> 
-<Assembly: AssemblyCopyright("Copyright @ Daniel Lamando 2012")> 
+<Assembly: AssemblyCopyright("Copyright © Daniel Lamando 2012")> 
 <Assembly: AssemblyTrademark("")> 
 <Assembly: ComVisible(false)>
 

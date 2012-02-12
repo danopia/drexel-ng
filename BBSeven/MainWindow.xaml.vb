@@ -76,4 +76,9 @@ Class MainWindow
         Dim Window As New SettingsWindow
         Window.ShowDialog()
     End Sub
+
+    Private Sub AboutButton_Click(sender As Object, e As System.Windows.RoutedEventArgs) Handles AboutButton.Click
+        Dim Window As New AboutWindow
+        Window.ShowDialog()
+    End Sub
 End Class
