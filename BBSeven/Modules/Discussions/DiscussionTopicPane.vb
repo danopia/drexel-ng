@@ -23,9 +23,7 @@
         Me.IsThrobbing = False
     End Sub
 
-    Public Overrides Function BuildItem(Source As BBVista.Message) As ShiftingPanes.MenuListItem(Of BBVista.Message)
-        Dim Item As New ShiftingPanes.MenuListItem(Of BBVista.Message)(Source)
-
+    Public Overrides Sub BuildItem(Source As BBVista.Message, Control As ShiftingPanes.MenuListItem(Of BBVista.Message))
         Dim _layout As New StackPanel
         Dim _subject As New Label
         Dim _author As New Label
@@ -59,7 +57,6 @@
         Border.BorderThickness = New Thickness(0, 1, 0, 1)
         Border.BorderBrush = Brushes.Gray
 
-        Item.Content = Border
-        Return Item
-    End Function
+        Control.Content = Border
+    End Sub
 End Class

@@ -26,12 +26,13 @@
         End If
     End Sub
 
-    Public MustOverride Function BuildItem(Source As x) As MenuListItem(Of x)
+    Public MustOverride Sub BuildItem(Source As x, Control As MenuListItem(Of x))
 
     Public Shadows Sub SetSources(SourceList As ICollection(Of x))
         _stack.Children.Clear()
         For Each Source As x In SourceList
-            Dim Control = BuildItem(Source)
+            Dim Control As New ShiftingPanes.MenuListItem(Of x)(Source)
+            BuildItem(Source, Control)
 
             AddHandler Control.OnSelect, AddressOf OnItemSelect
             AddHandler Control.OnDeselect, AddressOf OnItemDeselect

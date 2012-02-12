@@ -9,17 +9,13 @@ Public Class FontPane
         SetSources(Fonts.SystemFontFamilies)
     End Sub
 
-    Public Overrides Function BuildItem(Source As System.Windows.Media.FontFamily) As MenuListItem(Of FontFamily)
-        Dim Item As New MenuListItem(Of FontFamily)(Source)
-
+    Public Overrides Sub BuildItem(Source As FontFamily, Control As ShiftingPanes.MenuListItem(Of FontFamily))
         Dim _label As New Windows.Controls.Label
 
         _label.Content = Source.Source
         _label.FontFamily = Source
         _label.Padding = New Windows.Thickness(1)
 
-        Item.Content = _label
-
-        Return Item
-    End Function
+        Control.Content = _label
+    End Sub
 End Class

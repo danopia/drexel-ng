@@ -31,9 +31,7 @@
         End If
     End Sub
 
-    Public Overrides Function BuildItem(Source As BBVista.Topic) As ShiftingPanes.MenuListItem(Of BBVista.Topic)
-        Dim Item As New ShiftingPanes.MenuListItem(Of BBVista.Topic)(Source)
-
+    Public Overrides Sub BuildItem(Source As BBVista.Topic, Control As ShiftingPanes.MenuListItem(Of BBVista.Topic))
         Dim _layout As New Grid
         Dim _label As New Label
         Dim _count As New Label
@@ -74,7 +72,6 @@
         _layout.Children.Add(_count)
         _layout.Children.Add(_unread)
 
-        Item.Content = _layout
-        Return Item
-    End Function
+        Control.Content = _layout
+    End Sub
 End Class

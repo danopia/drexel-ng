@@ -15,7 +15,8 @@ Public MustInherit Class GroupedMenuListPane(Of x)
             _stack.Children.Add(_groupExpander)
 
             For Each Source As x In SourceGroup.Value
-                Dim Control = BuildItem(Source)
+                Dim Control As New ShiftingPanes.MenuListItem(Of x)(Source)
+                BuildItem(Source, Control)
 
                 AddHandler Control.OnSelect, AddressOf OnItemSelect
                 AddHandler Control.OnDeselect, AddressOf OnItemDeselect

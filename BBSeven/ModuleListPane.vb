@@ -17,9 +17,7 @@
         Me.IsThrobbing = False
     End Sub
 
-    Public Overrides Function BuildItem(Source As BBVista.Module) As ShiftingPanes.MenuListItem(Of BBVista.Module)
-        Dim Item As New ShiftingPanes.MenuListItem(Of BBVista.Module)(Source)
-
+    Public Overrides Sub BuildItem(Source As BBVista.Module, Control As ShiftingPanes.MenuListItem(Of BBVista.Module))
         Dim _label As New Label
         Dim _icon As New Image
         Dim _image As New BitmapImage
@@ -43,7 +41,6 @@
         _stack.Children.Add(_icon)
         _stack.Children.Add(_label)
 
-        Item.Content = _stack
-        Return Item
-    End Function
+        Control.Content = _stack
+    End Sub
 End Class

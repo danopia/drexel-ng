@@ -17,9 +17,7 @@
         Me.IsThrobbing = False
     End Sub
 
-    Public Overrides Function BuildItem(Source As BBVista.Course) As ShiftingPanes.MenuListItem(Of BBVista.Course)
-        Dim Item As New ShiftingPanes.MenuListItem(Of BBVista.Course)(Source)
-
+    Public Overrides Sub BuildItem(Source As BBVista.Course, Control As ShiftingPanes.MenuListItem(Of BBVista.Course))
         Dim _topLabel As New Label
         _topLabel.Content = String.Format("{0}-{1}-{2} {3}", Source.Name, Source.Number, Source.Section, Source.Junk)
         _topLabel.Padding = New Thickness(1)
@@ -31,21 +29,18 @@
         Dim _stack As New StackPanel
         _stack.Children.Add(_topLabel)
         _stack.Children.Add(_bottomLabel)
-        Item.Content = _stack
-
+        Control.Content = _stack
 
         If Source.Message IsNot Nothing Then _topLabel.FontWeight = FontWeights.Bold
 
         If Source.BasePath Is Nothing Then
             _topLabel.Foreground = Brushes.Gray
             _bottomLabel.Foreground = Brushes.Gray
-            Item.IsExpandable = False
+            Control.IsExpandable = False
         Else
             _topLabel.Foreground = Brushes.Black
             _bottomLabel.Foreground = Brushes.Black
-            Item.IsExpandable = True
+            Control.IsExpandable = True
         End If
-
-        Return Item
-    End Function
+    End Sub
 End Class
