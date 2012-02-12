@@ -13,7 +13,7 @@
     </TargetFrameworkProfile>
     <MyType>Custom</MyType>
     <IsWebBootstrapper>true</IsWebBootstrapper>
-    <PublishUrl>ftp://home.danopia.net/www/drexel-ng/bb7/</PublishUrl>
+    <PublishUrl>ftp://protonet.no-ip.org/dashboard/current/public/drexel-ng/bb7/</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>http://home.danopia.net/drexel-ng/bb7/</InstallUrl>
+    <InstallUrl>http://protonet.no-ip.org/drexel-ng/bb7/</InstallUrl>
     <TargetCulture>en-US</TargetCulture>
     <ProductName>Bb Seven</ProductName>
     <PublisherName>Daniel Lamando</PublisherName>
