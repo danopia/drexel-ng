@@ -1,0 +1,80 @@
+http://learning.dcollege.net/webct/urw/tp2457549603101.lc2454407222131/studentViewtoc.dowebct?TOCId=2457549687101&resetBreadcrumb=false&displayBCInsideFrame=true
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+
+<!-- toc/previewtoc.jsp -->
+<!-- applicationframework/CommonHeader.jspi -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- applicationframework/contextPath.jspi -->
+
+
+
+
+
+
+<SCRIPT language="javascript" type="text/javascript" src="/webct/urw/tp2457549603101.lc2454407222131/js2/jslibrary.js"></script>
+<script language="javascript" type="text/javascript" src="/webct/libraryjs.dowebct?locale=en_US"></script>
+
+<html dir="ltr">
+<title>Learning Module</title>
+<script language="javascript">
+function openWindow(title, url) {
+openBox(url, title, 500, 400);
+}
+function go(toclinkid, tocid) {
+parent.location.href="/webct/urw/tp2457549603101.lc2454407222131/previewtoc.dowebct?updateBreadcrumb=&resetBreadcrumb=false&TOCId="+tocid+"&TOCLinkId="+toclinkid;
+}
+var ie = document.all&&navigator.userAgent.indexOf("Opera") == -1;
+function checkFrames(){
+frameWidth =ie? TOCMENUFRAME.document.body.clientWidth+20 : TOCMENUFRAME.window.innerWidth;
+storeClientSideSetting("TOC_FRAME", frameWidth);
+if(opener)opener.storeClientSideSetting("TOC_FRAME", ie? frameWidth-2 : frameWidth);
+}
+function adjustFrames(){
+
+folderWidth=getClientSideSetting("TOC_FRAME");
+if(opener)folderWidth=opener.getClientSideSetting("TOC_FRAME");
+if(folderWidth==0 || !folderWidth || folderWidth==null)folderWidth=160;
+var newCols = folderWidth + ",*";
+document.getElementById('tocframes').cols=newCols;
+
+}
+//do not collapse course menu for portfolio mode
+function tocCollapseCourseMenu() {
+
+collapseCourseMenu();
+
+}
+</script>
+<frameset rows="27,1*,0" cols="*" frameborder="NO" border="no" framespacing="0" onLoad="tocCollapseCourseMenu(); highlightct('ctlm');" onUnload="unhighlightct('ctlm')">
+<frame name="AMFRAME" title="Action Menu Controls" scrolling="NO" noresize="noresize" src="/webct/urw/tp2457549603101.lc2454407222131/previewActionMenu.dowebct?updateBreadcrumb=null&showFirstPage=false&TOCId=2457549687101&TOCLinkId=2523644369061&actionMenuID=2457549706101&tocLinkLevelActionMenuID=2523644370061&previousTOCLinkId=2523644369061&nextTOCLinkId=2523644367061&nextLearningContextId=2523644369061" marginwidth="0" marginheight="0" frameborder="NO" />
+
+<frameset cols="160,*" frameborder="YES" border="5" id="tocframes" framespacing="2" rows="*" bordercolor="#dedede" onLoad="tocCollapseCourseMenu(); highlightct('ctlm'); adjustFrames();" onUnload="checkFrames(); unhighlightct('ctlm')">
+<frame name="TOCMENUFRAME" title="Learning Module Table of Contents" scrolling="YES" src="/webct/urw/tp2457549603101.lc2454407222131/previewtocmenu.dowebct?updateBreadcrumb=&TOCId=2457549687101&TOCLinkId=2523644369061&nextLearningContextId=2523644369061" marginwidth="10" marginheight="0" frameborder="yes" />
+
+
+<frame name="TOCCONTENTFRAME" title="Learning Module Content" src="/webct/urw/tp2457549603101.lc2454407222131/displayContentPage.dowebct?updateBreadcrumb=false&pageID=2523644365061&TOCId=2457549687101&TOCLinkId=2523644369061&nextLearningContextId=2523644369061&displayBCInsideFrame=true" marginwidth="8" marginheight="4" scrolling="YES" frameborder="yes" />
+
+</frameset>
+<frame id="JVM_CHECKER_FRAME" name="JVM_CHECKER_FRAME" noresize="noresize" title="JRE Checker Frame" src="blank.html" marginwidth="0" marginheight="0" frameborder="NO" scrolling="NO">
+</frameset>
+</html>

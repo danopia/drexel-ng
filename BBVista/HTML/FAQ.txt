@@ -1,0 +1,191 @@
+https://learning.dcollege.net/webct/ContentPageServerServlet/FAQ.html?pageID=2457550261101
+
+
+
+
+
+
+<!-- page/javascriptfunctions.jsp -->
+<!-- applicationframework/CommonHeader.jspi -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- applicationframework/contextPath.jspi -->
+
+
+
+
+
+
+<script language="javascript" src="/webct/jslib/sniffer.js"></script>
+<script language="JavaScript">
+function doWindowOpen(win_url,win_name,win_features,set_parent) {
+var new_win
+new_win=window.open(win_url, win_name, win_features)
+if (new_win) {new_win.focus()}
+if (set_parent==1) {
+new_win.par=self
+}
+}
+function showPage(tocID, tocLinkID, pageID, relativePath, anchorValue, target) {
+var filename =relativePath;
+if (window.name == "TOCCONTENTFRAME"
+|| (window.parent != null && window.parent.name=="TOCCONTENTFRAME")) {
+if (tocLinkID > 0) {
+
+var tocURL = "/webct/urw/tp2457549603101.lc2454407222131/previewtoc.dowebct?TOCId=" + tocID + "&TOCLinkId=" + tocLinkID + "&displayBCInsideFrame=true&relativePath=" + relativePath + "&pageId=" + pageID;
+if (anchorValue != "WEBCT_NO_ANCHOR_VALUE") {
+tocURL = tocURL + "&poundValue=" + anchorValue;
+}
+
+if (parent!= null && parent.BREADCRUMBFRAME != null) {
+parent.parent.location = tocURL + "&targetFrame=" + parent.parent.name + "&displayBCInsideFrame=true";
+return false;
+} else {
+parent.location.href=tocURL;
+return false;
+}
+} else if (pageID > 0) {
+
+var pageURL = "/webct/urw/tp2457549603101.lc2454407222131/displayContentPage.dowebct?pageID=" + pageID;
+if (anchorValue != "WEBCT_NO_ANCHOR_VALUE") {
+pageURL = pageURL + "#" + anchorValue;
+}
+
+if (parent!= null && parent.BREADCRUMBFRAME != null) {
+parent.location = pageURL + "&targetFrame=" + parent.name + "&displayBCInsideFrame=true";
+return false;
+} else {
+location.href=pageURL;
+}
+}else {
+if (null != relativePath && relativePath.indexOf("RelativeResourceManager?contentID")!= -1) {
+var resURL =  relativePath;
+filename= "page.link.content";
+}else{
+
+relativePath = relativePath.replace(/RelativeResourceManager\/Template\//, "");
+relativePath = escapeForIE(relativePath);
+var resURL = "/webct/urw/tp2457549603101.lc2454407222131/RelativeResourceManager/Template" + relativePath + ";JSESSIONIDVISTA=mkh1P36KPnMTyn9JtyxWpJFHB1xqQB3MZ9n3nvCnqgFZchZylLjb!1316206706!mountrainer-b.irt.drexel.edu!80!-1!816767535!alewife.irt.drexel.edu!80!-1!1329052266045";
+}
+if (anchorValue != "WEBCT_NO_ANCHOR_VALUE") {
+resURL = resURL + "#" + anchorValue;
+}
+
+if (parent!= null && parent.BREADCRUMBFRAME != null) {
+filename = filename.replace(/^.*\//, "");
+filename = escapeForIE(filename);
+var fsAction = "/webct/urw/tp2457549603101.lc2454407222131/simpleBreadcrumbFrameset.dowebct?BOTTOMFRAME_SRC="+resURL+"&BREADCRUMB_NAME="+filename;
+parent.location = fsAction;
+return false;
+} else {
+location.href=resURL;
+}
+}
+} else {
+if (pageID > 0) {
+
+var pageURL = "/webct/urw/tp2457549603101.lc2454407222131/displayContentPage.dowebct?pageID=" + pageID;
+if (anchorValue != "WEBCT_NO_ANCHOR_VALUE") {
+pageURL = pageURL + "#" + anchorValue;
+}
+
+if (parent!= null && parent.BREADCRUMBFRAME != null) {
+parent.location = pageURL + "&targetFrame=" + parent.name + "&displayBCInsideFrame=true";
+return false;
+} else {
+if (target == 2){
+var win_name = null;
+var win_features = "resizable, scrollbars";
+var set_parent = '1';
+doWindowOpen(pageURL,win_name,win_features,set_parent);
+}else{
+location.href=pageURL;
+}
+}
+} else {
+if (null != relativePath && relativePath.indexOf("RelativeResourceManager?contentID")!= -1) {
+var resURL =  relativePath;
+filename = "page.link.content";
+}else{
+
+relativePath = relativePath.replace(/RelativeResourceManager\/Template\//, "");
+relativePath = escapeForIE(relativePath);
+var resURL = "/webct/urw/tp2457549603101.lc2454407222131/RelativeResourceManager/Template" + relativePath + ";JSESSIONIDVISTA=mkh1P36KPnMTyn9JtyxWpJFHB1xqQB3MZ9n3nvCnqgFZchZylLjb!1316206706!mountrainer-b.irt.drexel.edu!80!-1!816767535!alewife.irt.drexel.edu!80!-1!1329052266045";
+}
+if (anchorValue != "WEBCT_NO_ANCHOR_VALUE") {
+resURL = resURL + "#" + anchorValue;
+}
+if (target == 2){
+var win_name = null;
+var win_features = "resizable, scrollbars";
+var set_parent = '1';
+doWindowOpen(resURL,win_name,win_features,set_parent);
+}else if (target == 3){
+
+if (parent!= null && parent.BREADCRUMBFRAME != null) {
+filename = filename.replace(/^.*\//, "");
+filename = escapeForIE(filename);
+var fsAction = "/webct/urw/tp2457549603101.lc2454407222131/simpleBreadcrumbFrameset.dowebct?BOTTOMFRAME_SRC="+resURL+"&BREADCRUMB_NAME="+filename;
+parent.location = fsAction;
+return false;
+} else {
+location.href=resURL;
+}
+}else{
+location.href=resURL;
+}
+}
+}
+}
+// IE has a feature where non-ascii urlencoded links are unencoded. For example, when passing a
+// japanese filename which has been uncoded we have to call this before generating URLs with the
+// filename
+function escapeForIE(name) {
+if (is_ie) {
+name = escape(name);
+}
+return name;
+}
+</script>
+<html>
+    <head>
+        <title></title>
+    </head>
+
+    <body>
+        <strong>1. What type of calculator do I need?</strong>
+        <p>A simple scientific calculator is all you will need for this course.  If you are in a major that will require you to have a more advanced calculator for other courses (e.g., engineering), you might want to purchase a graphing calculator now. </p>
+        <p><strong>2. Do I need safety glasses and a lab coat for lab?</strong></p>
+        <p>Yes.  For safety reasons, all students will be required to wear safety glasses and a lab coat when in lab.  You will not be allowed to complete an experiment if you do not have the required safety equipment.</p>
+        <p><strong>3. Can I use the 3rd edition of the textbook?</strong></p>
+
+        <p>While the content should be similar between the 3rd edition and the 4th edition, the end-of-chapter (recitation) problems will not be the same.  Some questions will have a different number in the newer edition, and some questions will be not be present in the older edition.  If you use the older edition, you are responsible for finding a copy of the questions assigned for this year.  Also, if you have purchased the 3rd edition, you will need to purchase an OWL access code separately.  See the syllabus for more information about how to do that.</p>
+        <p><strong>4. Can I buy the 6-month version of the eBook or OWL access code instead of the 24-month version?</strong></p>
+        <p>If you are only taking CHEM 102, you should be ok with the 6-month version.  You will not need OWL for CHEM 103.</p>
+        <p><strong>5. Can I purchase the international edition of the textbook?</strong></p>
+        <p>We are not familiar with that edition, so if you purchase that, you do it at your own risk.  If you purchase that edition, you are responsible for making sure the end-of-chapter questions are the same as those assigned for recitation.  You will also need to purchase the OWL access code separately.  See the syllabus for more information about how to do that.</p>
+        <p><strong>6. What do I do if I missed my recitation?</strong></p>
+
+        <p>You must attend another recitation the same week if you miss your scheduled recitation.  That applies to the first week as well.  You can find a listing of the times of all recitation sections by clicking on the "Lectures, Recitations and Labs" link from the course homepage.  You are only allowed to make up 3 recitations over the course of the term.</p>
+        <p><strong>7. How do I write a lab procedure?</strong></p>
+        <p>The hand-written procedure is a summary of what you will be doing in the lab.  You can find a detailed description of the experimental procedure in the lab manual.  Your hand-written version should be a brief description of the important parts of the procedure described in the lab manual.  The procedure must be turned in at the start of each experiment.</p>
+        <p><strong>8. Is there a pre-lab quiz?</strong></p>
+        <p>No. You are required to bring a hand-written summary of the lab procedure (see previous answer), but there is no quiz associated with the lab.</p>
+        <p><strong>9. Can I view OWL assignments after the submission deadline?</strong></p>
+
+        <p>As stated in the "Welcome Message" posted on the course homepage, "Once OWL assignments pass their due date, they are automatically moved to “Past Due Assignments” where they will continue to be available to you."</p>
+        <p><strong>10. Do I need a lab notebook?</strong></p>
+        <p>You do not need a separate lab notebook. You will need to purchase the lab manual from the bookstore.  You will record your results on data pages included in the lab manual, and those data pages will be submitted as part of a  lab report due for each experiment.  We will not collect a lab notebook, so you are welcome to use whatever you want to record your observations.</p>
+        <p></p>
+    </body>
+</html>

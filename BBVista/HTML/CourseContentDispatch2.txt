@@ -1,0 +1,627 @@
+https://learning.dcollege.net/webct/urw/tp2457549603101.lc2454407222131/CourseContentDispatch.dowebct?tab=view&displayinfo=2457551657101
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!-- applicationframework/studentView.jsp -->
+<!-- applicationframework/CommonHeader.jspi -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- applicationframework/contextPath.jspi -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html dir="ltr">
+
+
+
+<!-- tool=homepage screenId=1058 -->
+
+
+<head>
+
+<!-- applicationframework/HeaderCSS.jspi -->
+
+
+<script language="javascript" type="text/javascript" src="/webct/libraryjs.dowebct?locale=en_US"></script>
+<script type="text/javascript">
+function navJump(){
+var appFrame = getApplicationFrame();
+if(appFrame){
+if(appFrame.TOOLFRAME.LEFTTOOLFRAME){
+if(appFrame.TOOLFRAME.LEFTTOOLFRAME.document.getElementById("cthomepage")) appFrame.TOOLFRAME.LEFTTOOLFRAME.focus();
+else appFrame.TOOLFRAME.focus();
+}else if(appFrame.TOOLFRAME.EXPLORER_LEFT){
+appFrame.TOOLFRAME.EXPLORER_LEFT.focus();
+}else appFrame.TOPAPPFRAME.focus();
+}
+}
+function contentJump(){
+var appFrame = getApplicationFrame();
+if(appFrame){
+if(appFrame.TOOLFRAME.RIGHTTOOLFRAME) appFrame.TOOLFRAME.RIGHTTOOLFRAME.focus();
+else if(appFrame.TOOLFRAME.EXPLORER_RIGHT) appFrame.TOOLFRAME.EXPLORER_RIGHT.focus();
+else appFrame.TOOLFRAME.focus();
+}
+}
+function hideLinks(){
+var appFrame = getApplicationFrame();
+if(appFrame){
+if(window.name=="LEFTTOOLFRAME" || window.name=="EXPLORER_LEFT")document.getElementById("jumpLinks").removeChild(document.getElementById("navijump"));
+if(window.name=="RIGHTTOOLFRAME" || window.name=="EXPLORER_RIGHT")document.getElementById("jumpLinks").removeChild(document.getElementById("contjump"));
+}
+else{
+document.getElementById("jumpLinks").removeChild(document.getElementById("navijump"))
+document.getElementById("jumpLinks").removeChild(document.getElementById("contjump"))
+}
+}
+</script>
+<link rel="stylesheet" href="/webct/css/styles.jsp?locale=en_US&Id=2457549603101&colorSetId=99DAFF000000265D80265D80cad7ee265D80ffffff265D80F8FAFD265D80B3E1FF265D80B3E1FF&fontSize=.8em&fontType=Verdana,Arial,Helvetica,sans-serif" type="text/css" />
+<div id="jumpLinks">
+<a href="Javascript:navJump()" id="navijump" accesskey="1" title="Jump to Navigation Frame" class="hideoff">Jump to Navigation Frame</a>
+<a href="Javascript:contentJump()" id="contjump" accesskey="2" title="Jump to Content Frame" class="hideoff">Jump to Content Frame</a>
+</div>
+<script type="text/javascript">hideLinks()</script>
+
+<!-- applicationframework/_contentDisplay.jspi -->
+<SCRIPT language='JavaScript'>
+function openScorm(url, title) {
+openBox(url, title, 750, 550);
+}
+function submitAreaDisplay(areaId, openInNewWindow, linkID){displayTool('areaViewCSO.dowebct', 'areaid='+areaId, openInNewWindow, areaId, linkID);}
+function submitTopicDisplay(topicId, openInNewWindow, linkID) {displayTool('topicViewCSO.dowebct', 'topicid='+topicId, openInNewWindow, topicId, linkID);}
+function submitPTDisplay(id, openInNewWindow, linkID) {displayTool('ptLaunch.dowebct', 'id='+id, openInNewWindow, id, linkID);}
+function submitTocDisplay(tocID, openInNewWindow, linkID){displayTool('studentViewtoc.dowebct', 'TOCId='+tocID, openInNewWindow, tocID, linkID);}
+function submitUrlDisplay(UrlID, openInNewWindow, linkID){displayTool('displayURLForQM.dowebct', 'URLId='+UrlID, openInNewWindow, UrlID, linkID);}
+function submitScormDisplay(ScormID, openInNewWindow, linkID){displayTool('displayscorm.dowebct', 'scormId='+ScormID, true, ScormID, linkID);}
+function submitPageDisplay(pageId, openInNewWindow, linkID, officeFlag){displayTool('displayContentPage.dowebct', 'pageID='+pageId, openInNewWindow, pageId, linkID, officeFlag);}
+function submitOrganizerDisplay(orgID, linkID){displayTool('studentCourseView.dowebct', 'displayinfo='+orgID+',ORGANIZER_PAGE_TYPE', false, orgID, linkID);}
+function submitProjectDisplay(projectId, openInNewWindow, linkID){displayTool('viewAssignedProject.dowebct', 'projectId='+projectId+'&returnURL=/courseFS.dowebct?tab=view', openInNewWindow, projectId, linkID);}
+function submitAssessmentDisplay(assessmentId, openInNewWindow, linkID){displayTool('displayAssessmentIntro.dowebct', 'assessment='+assessmentId, openInNewWindow, assessmentId, linkID);}
+function submitMediaCollectionDisplay(collectionId, openInNewWindow, linkID){displayTool('viewEntriesInCollection.dowebct', 'collectionid='+collectionId, openInNewWindow, collectionId, linkID);}
+function submitChatRoomDisplay(roomId, openInNewWindow, linkID){displayTool('enterChat.dowebct', 'OrgRoomID='+roomId, openInNewWindow, roomId, linkID);}
+function submitSelfEnrollDisplay(signupSheetId, openInNewWindow, orgId, linkID){displayTool('membergradebookGetSelfEnrollView.dowebct', 'signupSheetId='+signupSheetId+'&orgId='+orgId, openInNewWindow, signupSheetId, linkID);}
+</SCRIPT>
+
+<script language="javascript" type="text/javascript" src="/webct/libraryjs.dowebct?locale=en_US"></script>
+<script language="javascript" type="text/javascript" src="/webct/contextmenu/contextmenu.js"></script>
+<SCRIPT language='JavaScript' type="text/javascript">
+function refreshPage(otherOrgPageId)
+{
+
+
+window.location = "/webct/urw/tp2457549603101.lc2454407222131//CourseContentDispatch.dowebct?tab=view&displayinfo=2457551657101";
+
+}
+function displayTool(actionUrl, query, openInNewWindow, windowName,linkId, officeFlag) {
+
+if (openInNewWindow == false) {
+query = query + "&resetBreadcrumb=false&displayBCInsideFrame=true";
+if (query.indexOf("pageID") != -1 && officeFlag == true) {
+window.open('/webct/urw/tp2457549603101.lc2454407222131/' + actionUrl + '?' + query);
+} else {
+window.location = '/webct/urw/tp2457549603101.lc2454407222131/' + actionUrl + '?' + query;
+}
+}
+else {
+if(actionUrl=='displayscorm.dowebct') {
+openScorm(actionUrl + '?' + query, windowName);
+}
+else {
+query = query + "&updateBreadcrumb=false";
+openPopupBox('/webct/urw/tp2457549603101.lc2454407222131/' + actionUrl + '?' + query, windowName, 'false');
+}
+}
+}
+function submitContentPageDisplay(pageId, openInNewWindow, officeFlag){
+if (openInNewWindow == true) {
+openPopupBox('/webct/urw/tp2457549603101.lc2454407222131/displayContentPage.dowebct?updateBreadcrumb=false&pageID=' + pageId, 'page', 'false');
+}
+else {
+submitPageDisplay(pageId, openInNewWindow, '', officeFlag);
+}
+}
+function submitLoad(id, type, openInNewWindow, officeFlag){
+if ( type == 'SCORM_TYPE')
+submitScormDisplay(id, openInNewWindow);
+else  if ( type == 'URL_TYPE')
+submitUrlDisplay(id, openInNewWindow);
+else if ( type == 'TOC_TYPE')
+submitTocDisplay(id, openInNewWindow);
+else if ( type == 'PAGE_TYPE')
+submitContentPageDisplay(id, openInNewWindow, officeFlag);
+else if (type == 'PROJECT_TYPE')
+
+
+displayTool('viewAssignedProject.dowebct', 'projectId='+id+'&returnURL=/courseFS.dowebct?tab=view&teachView=false', openInNewWindow, id);
+
+else if (type == 'ASSESSMENT_TYPE')
+
+
+submitAssessmentDisplay(id, openInNewWindow);
+
+else if ( type == 'ORGANIZER_PAGE_TYPE')
+submitOrganizerDisplay(id, openInNewWindow);
+else if ( type == 'DISCUSSION_CATEGORY_TYPE' )
+submitAreaDisplay(id, openInNewWindow);
+else if ( type == 'DISCUSSION_TOPIC_TYPE')
+submitTopicDisplay(id, openInNewWindow);
+else if ( type == 'CHAT_ROOM_TYPE')
+submitChatRoomDisplay(id, openInNewWindow);
+else if ( type == 'MEDIA_COLLECTION_TYPE')
+submitMediaCollectionDisplay(id, openInNewWindow);
+else if ( type.indexOf("PROXY")==0 )
+submitPTDisplay(id, openInNewWindow);
+else if ( type == 'SELF_ENROLLMENT_TYPE')
+submitSelfEnrollDisplay(id, openInNewWindow,2457551657101);
+else if ( type == 'SYLLABUS_TYPE')
+
+
+displayTool('syllabusStudentView.dowebct', 'componentId='+id, openInNewWindow, id);
+
+}
+function submitHideShowLink(organizerLinkId, targetType, show, currentOrgPageId) {
+var returnURL = "/CourseContentDispatch.dowebct?tab=teach&displayinfo=" + currentOrgPageId;
+document.hideShowForm.returnURL.value = returnURL;
+if (show == 'true'){
+document.hideShowForm.organizerLinkId.value = organizerLinkId;
+document.hideShowForm.organizerLinkShow.value = show;
+document.hideShowForm.submit();
+}
+else {
+document.hideShowForm.organizerLinkId.value = organizerLinkId;
+document.hideShowForm.organizerLinkShow.value = show;
+document.hideShowForm.submit();
+}
+}
+function editDescription(orgLinkId, currentOrgPageId) {
+var returnURL = escape("/CourseContentDispatch.dowebct?tab=teach&displayinfo=" + currentOrgPageId);
+var url = "/webct/urw/tp2457549603101.lc2454407222131/organizerMap/editOrganizerLinkLongDescription.dowebct?PARAM_ORGANIZER_LINK_ID=" + orgLinkId + "&returnURL=" + returnURL;
+document.location = url;
+}
+</SCRIPT>
+</head>
+
+
+
+<body class="listingpage" onLoad="highlightct('cthomepage'); clearsome();" onUnload="unhighlightct('cthomepage')" onClick="hideContextMenu()" style='; background-color:#99DAFF    !important'>
+<!-- action/breadcrumbs.jspi -->
+
+<script language="javascript">
+function isTargetValid(frame, triesleft, target) {
+
+try {
+if (frame == null) {
+return false;
+}
+if (triesleft < 1) {
+return false;
+}
+if (triesleft == null || triesleft == '') {
+triesleft = 6;
+}
+if (frame != null && frame.name == target ) {
+return true;
+} else {
+return isTargetValid(frame.parent, triesleft -1, target);
+}
+} catch (err) {
+return false;
+}
+}
+</script>
+
+<div name="breadcrumbDiv" id="breadcrumbDiv" class="breadcrumbs" style="display:none">
+<iframe id="breadcrumb" frameborder="0"  src="/webct/blank.html" style="position:absolute; top:0px; left:0px; display:none;"
+width="0"  height="0" name="breadcrumb"
+marginwidth="0"></iframe>
+
+
+
+
+
+
+<a href="https://learning.dcollege.net:443/webct/urw/tp2457549603101.lc2454407222131/CourseContentDispatch.dowebct?tab=view&amp;displayinfo=2457549606101" id="backId" title="Back" class="inline" target="RIGHTTOOLFRAME"><img src="/webct/images/small_back.gif" width="16" height="16" alt="Back"></a> <img id="divider" src="/webct/images/dot_divide2.gif" alt="">
+<script language="javascript">
+var backLink = document.getElementById('backId');
+if (isTargetValid(this.window,6,backLink.target) == false) {
+backLink.target = this.window.name;
+}
+</script>
+
+
+<span>Your location: </span>
+
+
+<a href="https://learning.dcollege.net:443/webct/urw/tp2457549603101.lc2454407222131/CourseContentDispatch.dowebct?tab=view&amp;displayinfo=2457549604101" id="breadcrumb0" target="RIGHTTOOLFRAME">Home Page</a> &#8250;
+<script language="javascript">
+var bcLink = document.getElementById('breadcrumb0');
+if (isTargetValid(this.window,6,bcLink.target) == false) {
+bcLink.target = this.window.name;
+}
+</script>
+
+
+
+
+<a href="https://learning.dcollege.net:443/webct/urw/tp2457549603101.lc2454407222131/CourseContentDispatch.dowebct?tab=view&amp;displayinfo=2457549606101" id="breadcrumb1" target="RIGHTTOOLFRAME">Lectures</a> &#8250;
+<script language="javascript">
+var bcLink = document.getElementById('breadcrumb1');
+if (isTargetValid(this.window,6,bcLink.target) == false) {
+bcLink.target = this.window.name;
+}
+</script>
+
+
+
+
+Addison
+
+</div>
+
+
+<script language="javascript">
+var br = document.getElementById('breadcrumb');
+var brDiv = document.getElementById('breadcrumbDiv');
+// HIDE the breadcrumbs if in a pop up (i.e.  No parent is RIGHTTOOLFRAME or TOOLFRAME)
+if (isInRightToolFrame(this.window)) {
+br.height=0;
+br.src="/webct/urw/tp2457549603101.lc2454407222131/breadcrumbIFrame.dowebct?popup=false";
+brDiv.style.display = "block";
+}else{
+br.height=0;
+br.src="/webct/urw/tp2457549603101.lc2454407222131/breadcrumbIFrame.dowebct?popup=true";
+brDiv.height=0;
+brDiv.style.display = "none";
+}
+</script>
+
+<!-- selective/SRHideShowConfirmation.jsp -->
+
+
+
+
+
+
+
+<table align="center" border=0 cellpadding='0' cellspacing='0' width="100%"><tr><td width = "100%">
+
+<div class="userhtml" style="text-align: left"> 
+
+</div>
+
+</td></tr></table>
+
+<style type="text/css">
+
+.orgtext{margin-left:65px;}
+
+
+.orgtext{height:1%;}
+.orgtext br, .iconleft br, .iconright br, .orgtext span, .orgtext div.helptext{clear:none;}
+.orgdesc{margin-top:5px;}
+</style>
+<script language="javascript" type="text/javascript">
+function clearsome(){
+var tditems=document.getElementById("orgtable").getElementsByTagName("td");
+for (var i = 0; i < tditems.length; i++) {
+tdimgs=tditems[i].getElementsByTagName("img");
+var imgwidth=tdimgs[0].width+10;
+tddivs=tditems[i].getElementsByTagName("div");
+
+tddivs[0].style.marginLeft=imgwidth+"px";
+
+
+}
+}
+</script>
+
+<table width="100%" align="center" border=0 cellpadding='0' cellspacing='12' id="orgtable">
+
+
+<tr>
+
+<!-- Left -->
+
+<!-- Right -->
+
+
+
+<td valign="top" align="center" width="21%" class="centertext">
+
+<a href="javascript:submitLoad('2457551955101','TOC_TYPE', false, false)"
+
+>
+
+<img src="/webct/urw/tp2457549603101.lc2454407222131/PresentationSettingsIconServlet/defaultIconIdentifier/TOC_TYPE/41072" hspace="2" border="0" align="left" class=""
+
+
+
+
+/></a>
+
+<div class="orgtext">
+
+<a href="javascript:submitLoad('2457551955101','TOC_TYPE', false, false)"
+
+>
+Lecture Notes - Addison</a>
+
+
+
+<div align="center">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!-- organizerMap/displayIconLongDescription.jsp -->
+<!-- applicationframework/CommonHeader.jspi -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- applicationframework/contextPath.jspi -->
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+</td>
+
+
+<!-- Left -->
+
+<!-- Right -->
+
+
+
+<td valign="top" align="center" width="21%" class="centertext">
+
+<a href="javascript:submitLoad('2499116814141','PAGE_TYPE', false, false)"
+
+>
+
+<img src="/webct/urw/tp2457549603101.lc2454407222131/PresentationSettingsIconServlet/defaultIconIdentifier/PAGE_TYPE/41069" hspace="2" border="0" align="left" class=""
+
+
+
+
+/></a>
+
+<div class="orgtext">
+
+<a href="javascript:submitLoad('2499116814141','PAGE_TYPE', false, false)"
+
+>
+Iodine4</a>
+
+
+
+<div align="center">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!-- organizerMap/displayIconLongDescription.jsp -->
+<!-- applicationframework/CommonHeader.jspi -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- applicationframework/contextPath.jspi -->
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+</td>
+
+
+<!-- Left -->
+
+<!-- Right -->
+
+
+
+<td valign="top" align="center" width="21%" class="centertext">
+
+<a href="javascript:submitLoad('2521226837071','PAGE_TYPE', false, false)"
+
+>
+
+<img src="/webct/urw/tp2457549603101.lc2454407222131/PresentationSettingsIconServlet/defaultIconIdentifier/PAGE_TYPE/41069" hspace="2" border="0" align="left" class=""
+
+
+
+
+/></a>
+
+<div class="orgtext">
+
+<a href="javascript:submitLoad('2521226837071','PAGE_TYPE', false, false)"
+
+>
+102FamiliarEqns-5</a>
+
+
+
+<div align="center">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!-- organizerMap/displayIconLongDescription.jsp -->
+<!-- applicationframework/CommonHeader.jspi -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- applicationframework/contextPath.jspi -->
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+</td>
+
+
+<!-- Left -->
+
+<!-- Right -->
+
+
+
+<td valign="top" align="center" width="21%" class="centertext">
+
+<a href="javascript:submitLoad('2522583017091','PAGE_TYPE', false, false)"
+
+>
+
+<img src="/webct/urw/tp2457549603101.lc2454407222131/PresentationSettingsIconServlet/defaultIconIdentifier/PAGE_TYPE/41069" hspace="2" border="0" align="left" class=""
+
+
+
+
+/></a>
+
+<div class="orgtext">
+
+<a href="javascript:submitLoad('2522583017091','PAGE_TYPE', false, false)"
+
+>
+EqlmB</a>
+
+
+
+<div align="center">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!-- organizerMap/displayIconLongDescription.jsp -->
+<!-- applicationframework/CommonHeader.jspi -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- applicationframework/contextPath.jspi -->
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+</td>
+
+</tr>
+
+
+</table>
+
+<table align="center" border=0 cellpadding='0' cellspacing='0' width="100%"><tr><td width="100%">
+
+<div class="userhtml" style="text-align: left"> 
+
+</div>
+
+</td></tr></table>
+
+<form name="hideShowForm" action="/webct/urw/tp2457549603101.lc2454407222131/hideShowOrgLink.dowebct">
+<input type="hidden" name="returnURL" value="">
+<input type="hidden" name="organizerLinkId" value="">
+<input type="hidden" name="organizerLinkShow" value="">
+</form>
+</body>
+</html>

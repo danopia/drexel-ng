@@ -110,6 +110,23 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="HTML\breadcrumbsOnly.txt" />
+    <Content Include="HTML\CourseContentDispatch.txt" />
+    <Content Include="HTML\CourseContentDispatch2.txt" />
+    <Content Include="HTML\ctbDispatch.txt" />
+    <Content Include="HTML\displayContentPage-mov.txt" />
+    <Content Include="HTML\displayContentPage.txt" />
+    <Content Include="HTML\displayContentPage2.txt" />
+    <Content Include="HTML\displayurl.txt" />
+    <Content Include="HTML\FAQ.txt" />
+    <Content Include="HTML\previewActionMenu.txt" />
+    <Content Include="HTML\previewtocmenu-good.txt" />
+    <Content Include="HTML\studentCourseView.txt" />
+    <Content Include="HTML\studentViewtoc.txt" />
+    <Content Include="HTML\stuff.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

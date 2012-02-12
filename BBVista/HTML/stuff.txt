@@ -1,0 +1,129 @@
+http://learning.dcollege.net/webct/urw/tp2457549603101.lc2454407222131/displayContentPage.dowebct?updateBreadcrumb=false&pageID=2463858411061
+
+
+
+
+
+
+
+
+
+
+http://learning.dcollege.net/webct/urw/tp2457549603101.lc2454407222131/displayURLForQM.dowebct?URLId=2457549940101&updateBreadcrumb=false
+
+
+this.location= "http://owl.cengage.com/owl-c/register/owlmgr.cgi?Mode=2&ArchivedDatabaseID=193&CategoryID=41";
+
+
+
+
+
+
+
+
+
+
+<script language = "javascript">
+var nodes = [];
+var tree = new WebFXTree("Root");
+var tree10 = new WebFXTreeItem('CHEM 102 INITIAL MESSAGE ...',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2485848222141&componentId=2463858411061&componentType=PAGE_TYPE&tab=view&targetFrame=_new');
+tree10.target = '_new';
+tree.add(tree10);
+var tree11 = new WebFXTreeItem('FAQ',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2457550371101&componentId=2457550261101&componentType=PAGE_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree11.target = 'RIGHTTOOLFRAME';
+tree.add(tree11);
+var tree12 = new WebFXTreeItem('Lectures',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2457550379101&componentId=2457549606101&componentType=ORGANIZER_PAGE_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree12.target = 'RIGHTTOOLFRAME';
+tree.add(tree12);
+var tree1220 = new WebFXTreeItem('Addison',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2457551661101&componentId=2457551657101&componentType=ORGANIZER_PAGE_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree1220.target = 'RIGHTTOOLFRAME';
+tree12.add(tree1220);
+var tree122030 = new WebFXTreeItem('Lecture Notes - Addison',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2457551962101&componentId=2457551955101&componentType=TOC_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree122030.target = 'RIGHTTOOLFRAME';
+tree1220.add(tree122030);
+var tree122031 = new WebFXTreeItem('Iodine4',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2499116816141&componentId=2499116814141&componentType=PAGE_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree122031.target = 'RIGHTTOOLFRAME';
+tree1220.add(tree122031);
+var tree122032 = new WebFXTreeItem('102FamiliarEqns-5',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2521226839071&componentId=2521226837071&componentType=PAGE_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree122032.target = 'RIGHTTOOLFRAME';
+tree1220.add(tree122032);
+var tree122033 = new WebFXTreeItem('EqlmB',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2522583020091&componentId=2522583017091&componentType=PAGE_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree122033.target = 'RIGHTTOOLFRAME';
+tree1220.add(tree122033);
+var tree1221 = new WebFXTreeItem('Ilies',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2457551993101&componentId=2457551986101&componentType=TOC_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree1221.target = 'RIGHTTOOLFRAME';
+tree12.add(tree1221);
+var tree1222 = new WebFXTreeItem('Ji',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2457550388101&componentId=2457549898101&componentType=TOC_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree1222.target = 'RIGHTTOOLFRAME';
+tree12.add(tree1222);
+var tree1223 = new WebFXTreeItem('King',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2457550387101&componentId=2457549950101&componentType=TOC_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree1223.target = 'RIGHTTOOLFRAME';
+tree12.add(tree1223);
+var tree1224 = new WebFXTreeItem('Rutkowsky',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2457550389101&componentId=2457550068101&componentType=TOC_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree1224.target = 'RIGHTTOOLFRAME';
+tree12.add(tree1224);
+var tree13 = new WebFXTreeItem('Syllabus',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2457550376101&componentId=2457549895101&componentType=SYLLABUS_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree13.target = 'RIGHTTOOLFRAME';
+tree.add(tree13);
+var tree14 = new WebFXTreeItem('Lectures, Recitations and...',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2457550374101&componentId=2457550066101&componentType=PAGE_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree14.target = 'RIGHTTOOLFRAME';
+tree.add(tree14);
+var tree15 = new WebFXTreeItem('CHEM 102 Instructor Conta...',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2457550375101&componentId=2457550056101&componentType=PAGE_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree15.target = 'RIGHTTOOLFRAME';
+tree.add(tree15);
+var tree16 = new WebFXTreeItem('OWL Website',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2457550384101&componentId=2457549940101&componentType=URL_TYPE&tab=view&targetFrame=_new');
+tree16.target = '_new';
+tree.add(tree16);
+var tree17 = new WebFXTreeItem('Exam Information',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2457550381101&componentId=2457549761101&componentType=TOC_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree17.target = 'RIGHTTOOLFRAME';
+tree.add(tree17);
+var tree18 = new WebFXTreeItem('Review Information',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2457550383101&componentId=2457549687101&componentType=TOC_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree18.target = 'RIGHTTOOLFRAME';
+tree.add(tree18);
+var tree19 = new WebFXTreeItem('Make-up Exam Application ...',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2457550380101&componentId=2457550067101&componentType=PROJECT_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree19.target = 'RIGHTTOOLFRAME';
+tree.add(tree19);
+var tree110 = new WebFXTreeItem('Personal Readiness Survey',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2457550377101&componentId=2457550220101&componentType=ASSESSMENT_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree110.target = 'RIGHTTOOLFRAME';
+tree.add(tree110);
+var tree111 = new WebFXTreeItem('Resources',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2457550382101&componentId=2457549605101&componentType=ORGANIZER_PAGE_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree111.target = 'RIGHTTOOLFRAME';
+tree.add(tree111);
+var tree11120 = new WebFXTreeItem('WebCT Vista Help',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2457550385101&componentId=2457549941101&componentType=URL_TYPE&tab=view&targetFrame=_new');
+tree11120.target = '_new';
+tree111.add(tree11120);
+var tree11121 = new WebFXTreeItem('Drexel Libraries',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2457550386101&componentId=2457549942101&componentType=URL_TYPE&tab=view&targetFrame=_new');
+tree11121.target = '_new';
+tree111.add(tree11121);
+var tree112 = new WebFXTreeItem('Lab Report Rubrics',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2457550378101&componentId=2457550229101&componentType=TOC_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree112.target = 'RIGHTTOOLFRAME';
+tree.add(tree112);
+var tree113 = new WebFXTreeItem('Lab Report Cover Sheet_Wi...',  '/webct/urw/tp2457549603101.lc2454407222131/viewCourseMapItemDispatcher.dowebct?linkId=2463237155051&componentId=2463237153051&componentType=PAGE_TYPE&tab=view&targetFrame=RIGHTTOOLFRAME');
+tree113.target = 'RIGHTTOOLFRAME';
+tree.add(tree113);
+
+document.write(tree);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+http://learning.dcollege.net/webct/urw/tp2457549603101.lc2454407222131/studentCourseView.dowebct?tab=view&forward=studentCourseView.dowebct&lcid=2454407222131
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,157 @@
+http://learning.dcollege.net/webct/urw/tp2457549603101.lc2454407222131/previewActionMenu.dowebct?updateBreadcrumb=null&showFirstPage=false&TOCId=2457549687101&TOCLinkId=2523644369061&actionMenuID=2457549706101&tocLinkLevelActionMenuID=2523644370061&previousTOCLinkId=2523644369061&nextTOCLinkId=2523644367061&nextLearningContextId=2523644369061
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!-- actionmenu/actionMenuToolBar.jsp -->
+
+<!-- applicationframework/CommonHeader.jspi -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- applicationframework/contextPath.jspi -->
+
+
+
+
+
+
+<html dir="ltr">
+<head>
+
+
+<title></title>
+<!-- applicationframework/HeaderCSS.jspi -->
+
+
+<script language="javascript" type="text/javascript" src="/webct/libraryjs.dowebct?locale=en_US"></script>
+<script type="text/javascript">
+function navJump(){
+var appFrame = getApplicationFrame();
+if(appFrame){
+if(appFrame.TOOLFRAME.LEFTTOOLFRAME){
+if(appFrame.TOOLFRAME.LEFTTOOLFRAME.document.getElementById("cthomepage")) appFrame.TOOLFRAME.LEFTTOOLFRAME.focus();
+else appFrame.TOOLFRAME.focus();
+}else if(appFrame.TOOLFRAME.EXPLORER_LEFT){
+appFrame.TOOLFRAME.EXPLORER_LEFT.focus();
+}else appFrame.TOPAPPFRAME.focus();
+}
+}
+function contentJump(){
+var appFrame = getApplicationFrame();
+if(appFrame){
+if(appFrame.TOOLFRAME.RIGHTTOOLFRAME) appFrame.TOOLFRAME.RIGHTTOOLFRAME.focus();
+else if(appFrame.TOOLFRAME.EXPLORER_RIGHT) appFrame.TOOLFRAME.EXPLORER_RIGHT.focus();
+else appFrame.TOOLFRAME.focus();
+}
+}
+function hideLinks(){
+var appFrame = getApplicationFrame();
+if(appFrame){
+if(window.name=="LEFTTOOLFRAME" || window.name=="EXPLORER_LEFT")document.getElementById("jumpLinks").removeChild(document.getElementById("navijump"));
+if(window.name=="RIGHTTOOLFRAME" || window.name=="EXPLORER_RIGHT")document.getElementById("jumpLinks").removeChild(document.getElementById("contjump"));
+}
+else{
+document.getElementById("jumpLinks").removeChild(document.getElementById("navijump"))
+document.getElementById("jumpLinks").removeChild(document.getElementById("contjump"))
+}
+}
+</script>
+<link rel="stylesheet" href="/webct/css/styles.jsp?locale=en_US&Id=2457549603101&colorSetId=99DAFF000000265D80265D80cad7ee265D80ffffff265D80F8FAFD265D80B3E1FF265D80B3E1FF&fontSize=.8em&fontType=Verdana,Arial,Helvetica,sans-serif" type="text/css" />
+<div id="jumpLinks">
+<a href="Javascript:navJump()" id="navijump" accesskey="1" title="Jump to Navigation Frame" class="hideoff">Jump to Navigation Frame</a>
+<a href="Javascript:contentJump()" id="contjump" accesskey="2" title="Jump to Content Frame" class="hideoff">Jump to Content Frame</a>
+</div>
+<script type="text/javascript">hideLinks()</script>
+
+
+<script language="javascript" type="text/javascript" src="/webct/libraryjs.dowebct?locale=en_US"></script>
+<script language="javascript">
+function mgo(){
+parent.location.href="/webct/urw/tp2457549603101.lc2454407222131/previewtoc.dowebct?TOCLinkId=2523644369061&TOCId=2457549687101";
+}
+function go(toclinkid, tocid) {
+parent.location.href="/webct/urw/tp2457549603101.lc2454407222131/previewtoc.dowebct?updateBreadcrumb=true&resetBreadcrumb=false&TOCId="+tocid+"&TOCLinkId="+toclinkid;
+}
+function previewTocFromBookmark(nextTocLinkId, nextTocId, currentTocId, currentTocLinkId) {
+parent.location.href="/webct/urw/tp2457549603101.lc2454407222131/previewtoc.dowebct?updateBreadcrumb=true&resetBreadcrumb=false&TOCId="+nextTocId+"&currentTOCId="+currentTocId+"&currentTOCLinkId="+currentTocLinkId+"&TOCLinkId="+nextTocLinkId;
+}
+function openWindow(title, url) {
+openBox(url, title, 500, 400);
+}
+function displayActionMenuTool(componentType, isSingleInstance, displayAsPopUp) {
+if (displayAsPopUp == 'true') {
+openBox('/webct/urw/tp2457549603101.lc2454407222131/previewtoc.dowebct?TOCId=2457549687101&actionMenuID=2457549706101&tocLinkLevelActionMenuID=2523644370061&TOCLinkId=2523644369061&tocReturnURL=previewtoc.dowebct%3fTOCId%3d2457549687101%26TOCLinkId%3d2523644369061" + "&componentType=" + componentType + "&isSingleInstance=" + isSingleInstance','',500, 600);
+} else {
+parent.location.href="/webct/urw/tp2457549603101.lc2454407222131/previewtoc.dowebct?TOCId=2457549687101&actionMenuID=2457549706101&tocLinkLevelActionMenuID=2523644370061&TOCLinkId=2523644369061&tocReturnURL=previewtoc.dowebct%3fTOCId%3d2457549687101%26TOCLinkId%3d2523644369061" + "&componentType=" + componentType + "&isSingleInstance=" + isSingleInstance;
+}
+}
+function displaySingleInstanceActionMenuTool(toolName, isSingleInstance, displayAsPopUp) {
+if (displayAsPopUp == 'true') {
+openBox('/webct/urw/tp2457549603101.lc2454407222131/previewtoc.dowebct?TOCId=2457549687101&actionMenuID=2457549706101&tocLinkLevelActionMenuID=2523644370061&TOCLinkId=2523644369061&tocReturnURL=previewtoc.dowebct%3fTOCId%3d2457549687101%26TOCLinkId%3d2523644369061" + "&toolName=" + toolName + "&isSingleInstance=" + isSingleInstance','',500, 600);
+} else {
+parent.location.href="/webct/urw/tp2457549603101.lc2454407222131/previewtoc.dowebct?TOCId=2457549687101&actionMenuID=2457549706101&tocLinkLevelActionMenuID=2523644370061&TOCLinkId=2523644369061&tocReturnURL=previewtoc.dowebct%3fTOCId%3d2457549687101%26TOCLinkId%3d2523644369061" + "&toolName=" + toolName + "&isSingleInstance=" + isSingleInstance;
+}
+}
+function retrace() {
+parent.location.href="/webct/urw/tp2457549603101.lc2454407222131/retraceActionMenu.dowebct?updateBreadcrumb=true&resetBreadcrumb=false&TOCId=2457549687101&actionMenuID=2457549706101&tocLinkLevelActionMenuID=2523644370061&TOCLinkId=2523644369061&tocReturnURL=previewtoc.dowebct%3fTOCId%3d2457549687101%26TOCLinkId%3d2523644369061" ;
+}
+</script>
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="28">
+<tr class="dynheaderbottom">
+<td nowrap="nowrap" width="100%" align="right">
+
+<img src="/webct/images/dot_divide.gif" alt=" " align="absmiddle" border="0" />
+
+
+
+
+
+<a href="javascript:parent.openWindow('Notes', '/webct/urw/tp2457549603101.lc2454407222131/editnotes.dowebct?TOCId=2457549687101&actionMenuID=2457549706101&tocLinkLevelActionMenuID=2523644370061&TOCLinkId=2523644369061&tocReturnURL=previewtoc.dowebct%3fTOCId%3d2457549687101%26TOCLinkId%3d2523644369061')"  title="Notes (Link opens in a new window)" class="inline"><img src="/webct/images/large_take_notes.gif" border="0" alt="Notes (Link opens in a new window)" align="absmiddle" /></a>
+
+
+
+<a href="javascript:displaySingleInstanceActionMenuTool('Compile', 'true', 'false')" title="Create Printable View" class="inline"><img src="/webct/images/large_compile.gif" border="0" alt="Create Printable View" align="absmiddle" /></a>
+
+
+
+
+<a href="javascript:parent.openWindow('Bookmarks', '/webct/urw/tp2457549603101.lc2454407222131/viewBookmarks.dowebct?TOCId=2457549687101&actionMenuID=2457549706101&tocLinkLevelActionMenuID=2523644370061&TOCLinkId=2523644369061&tocReturnURL=previewtoc.dowebct%3fTOCId%3d2457549687101%26TOCLinkId%3d2523644369061')"  title="Bookmarks (Link opens in a new window)" class="inline"><img src="/webct/images/large_bookmark.gif" border="0" alt="Bookmarks (Link opens in a new window)" align="absmiddle" /></a>
+
+
+
+<img src="/webct/images/dot_divide.gif" alt=" " align="absmiddle" border="0" />
+<a href="javascript:retrace()" class="inline" title="Retrace"> <img src="/webct/images/small_retrace.gif" alt="Retrace" align="absmiddle" border="0" /></a>
+
+<img src="/webct/images/small_prev_page.gif" class="hidden" alt="Previous Page" align="absmiddle" border="0" />
+
+
+<a href="javascript:go(2523644367061, 2457549687101)" title="Next Page" class="inline"> <img src="/webct/images/small_next_page.gif" alt="Next Page" align="absmiddle" border="0" /></a>
+
+
+<img height="8" src="/webct/images/shim.gif" width="1" alt=" " />
+</td>
+<td align="right"><img height="8" src="/webct/images/shim.gif" width="14" alt=" " /></td>
+</tr>
+</table>
+</body>
+</html>

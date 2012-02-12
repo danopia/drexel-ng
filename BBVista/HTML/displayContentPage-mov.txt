@@ -1,0 +1,62 @@
+http://learning.dcollege.net/webct/displayContentPage.dowebct?resetBreadcrumb=false&pageID=2499116814141
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!-- page/loadContentPage.jsp -->
+<!-- applicationframework/CommonHeader.jspi -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- applicationframework/contextPath.jspi -->
+
+
+
+
+
+
+
+<html dir="ltr">
+<script language="javascript">
+window.location.href="/webct/urw/tp2457549603101.lc2454407222131//RelativeResourceManager?contentID=2499116813141";
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://learning.dcollege.net/webct/urw/tp2457549603101.lc2454407222131//RelativeResourceManager?contentID=2499116813141
+
+
+
+
+
+Returns a .mov quicktime

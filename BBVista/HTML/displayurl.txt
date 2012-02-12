@@ -1,0 +1,60 @@
+http://learning.dcollege.net/webct/displayurl.dowebct?nextLearningContextId=2496798589051&TOCLinkId=2523833719091&TOCId=2457549687101&updateBreadcrumb=false&URLId=2457549944101
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!-- url/displayurl.jsp -->
+<!-- applicationframework/CommonHeader.jspi -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- applicationframework/contextPath.jspi -->
+
+
+
+
+
+
+
+
+
+
+<html dir="ltr">
+<head>
+
+</head>
+<script language="javascript" type="text/javascript" src="/webct/libraryjs.dowebct?locale=en_US"></script>
+<script language="javascript">
+var x = "http://www.chemistry.drexel.edu/podcasts/king/Chem102/W12_Exam 2 review/W12_Exam 2 review.html";
+var title = "popupUrl";
+function doPopup() {
+openPopupBox(x, title);
+}
+</script>
+
+<body>
+<script language='javascript'>
+location.href=x;
+</script>
+</body>
+
+</html>

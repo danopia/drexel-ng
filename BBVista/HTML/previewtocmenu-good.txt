@@ -1,0 +1,217 @@
+http://learning.dcollege.net/webct/urw/tp2457549603101.lc2454407222131/previewtocmenu.dowebct?updateBreadcrumb=&TOCId=2457549687101&TOCLinkId=2523644369061&nextLearningContextId=2523644369061
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!-- toc/previewtocmenu.jsp -->
+<!-- applicationframework/CommonHeader.jspi -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- applicationframework/contextPath.jspi -->
+
+
+
+
+
+
+
+
+
+
+
+
+<html dir="ltr">
+<head>
+
+<!-- ctb/xtree.jspi -->
+<script language="javascript">
+var webFXTreeConfig = {
+rootIcon        : '',
+openRootIcon    : '',
+folderIcon      : '',
+openFolderIcon  : '',
+fileIcon        : '',
+iIcon           : '/webct/urw/tp2457549603101.lc2454407222131/images/om_menu_line.gif',
+lIcon           : '/webct/urw/tp2457549603101.lc2454407222131/images/om_menu_last.gif',
+lMinusIcon      : '/webct/urw/tp2457549603101.lc2454407222131/images/om_menu_last_minus.gif',
+lPlusIcon       : '/webct/urw/tp2457549603101.lc2454407222131/images/om_menu_last_plus.gif',
+tIcon           : '/webct/urw/tp2457549603101.lc2454407222131/images/om_menu_tee.gif',
+tMinusIcon      : '/webct/urw/tp2457549603101.lc2454407222131/images/om_menu_tee_minus.gif',
+tPlusIcon       : '/webct/urw/tp2457549603101.lc2454407222131/images/om_menu_tee_plus.gif',
+blankIcon       : '/webct/images/shim.gif',
+defaultText     : 'Tree Item',
+defaultAction   : 'javascript:void(0);',
+defaultBehavior : 'classic',
+usePersistence	: true
+};
+/*** Ajax related functions to persist nodes state on the sever side (As server cookies replacing browser cookies)***/
+function getCookies(){
+retrieveUrl("/webct/urw/tp2457549603101.lc2454407222131/genericServerCookies.dowebct?action=getCookies", processFuncGet, false);
+}
+function setCookies(key,value){
+retrieveUrl("/webct/urw/tp2457549603101.lc2454407222131/genericServerCookies.dowebct?action=setCookies&key="+key+"&value="+value, processFuncSet, true);
+}
+function processFuncGet() {
+if(req.readyState ==4) {
+if (req.status == 200) {
+returnValue = req.responseText;
+WebFXCookie.prototype.cookies = returnValue;
+}else{
+//alert("Getting bad response from the server");
+}
+}
+}
+function processFuncSet() {
+}
+/*** End of Ajax Related Functions ***/
+</script>
+<script language="javascript" type="text/javascript" src="/webct/jslib/ajaxLibrary.js"></script>
+
+<script language="javascript" src="/webct/toc/xtree.js"></script>
+
+<script>
+if(webFXTreeHandler.cookies.getCookie('top_firsttime')== 'null'){
+WebFXCookie.prototype.setCookie('top_firsttime', 'true');
+}else{
+WebFXCookie.prototype.setCookie('top_firsttime', 'false');
+}
+var menu_state=webFXTreeHandler.cookies.getCookie('top_firsttime');
+</script>
+<style type="text/css">
+div.container {
+padding-top:5px;
+}
+</style>
+<title>Table of Contents for <escape:escape escape="H">Review Information</escape:escape>
+</title>
+<!-- applicationframework/HeaderCSS.jspi -->
+
+
+<script language="javascript" type="text/javascript" src="/webct/libraryjs.dowebct?locale=en_US"></script>
+<script type="text/javascript">
+function navJump(){
+var appFrame = getApplicationFrame();
+if(appFrame){
+if(appFrame.TOOLFRAME.LEFTTOOLFRAME){
+if(appFrame.TOOLFRAME.LEFTTOOLFRAME.document.getElementById("cthomepage")) appFrame.TOOLFRAME.LEFTTOOLFRAME.focus();
+else appFrame.TOOLFRAME.focus();
+}else if(appFrame.TOOLFRAME.EXPLORER_LEFT){
+appFrame.TOOLFRAME.EXPLORER_LEFT.focus();
+}else appFrame.TOPAPPFRAME.focus();
+}
+}
+function contentJump(){
+var appFrame = getApplicationFrame();
+if(appFrame){
+if(appFrame.TOOLFRAME.RIGHTTOOLFRAME) appFrame.TOOLFRAME.RIGHTTOOLFRAME.focus();
+else if(appFrame.TOOLFRAME.EXPLORER_RIGHT) appFrame.TOOLFRAME.EXPLORER_RIGHT.focus();
+else appFrame.TOOLFRAME.focus();
+}
+}
+function hideLinks(){
+var appFrame = getApplicationFrame();
+if(appFrame){
+if(window.name=="LEFTTOOLFRAME" || window.name=="EXPLORER_LEFT")document.getElementById("jumpLinks").removeChild(document.getElementById("navijump"));
+if(window.name=="RIGHTTOOLFRAME" || window.name=="EXPLORER_RIGHT")document.getElementById("jumpLinks").removeChild(document.getElementById("contjump"));
+}
+else{
+document.getElementById("jumpLinks").removeChild(document.getElementById("navijump"))
+document.getElementById("jumpLinks").removeChild(document.getElementById("contjump"))
+}
+}
+</script>
+<link rel="stylesheet" href="/webct/css/styles.jsp?locale=en_US&Id=2457549603101&colorSetId=99DAFF000000265D80265D80cad7ee265D80ffffff265D80F8FAFD265D80B3E1FF265D80B3E1FF&fontSize=.8em&fontType=Verdana,Arial,Helvetica,sans-serif" type="text/css" />
+<div id="jumpLinks">
+<a href="Javascript:navJump()" id="navijump" accesskey="1" title="Jump to Navigation Frame" class="hideoff">Jump to Navigation Frame</a>
+<a href="Javascript:contentJump()" id="contjump" accesskey="2" title="Jump to Content Frame" class="hideoff">Jump to Content Frame</a>
+</div>
+<script type="text/javascript">hideLinks()</script>
+
+
+<script language="javascript">
+function go(toclinkid, tocid) {
+parent.location.href="/webct/urw/tp2457549603101.lc2454407222131/previewtoc.dowebct?updateBreadcrumb=false&resetBreadcrumb=false&TOCId="+tocid+"&TOCLinkId="+toclinkid+"#"+toclinkid;
+}
+</script>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload='if( 2523644369061 ){document.location.href="#2523644369061";}if(!menu_state){topmenu.expandChildren();}'>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr class="subcell2">
+<td style="{padding-left:8px;}">
+Table of Contents for&nbsp;<br>
+<b>Review Information</b>
+</td>
+</tr>
+</table>
+
+
+
+<div class="container">
+
+<script type="text/javascript">
+<!--
+
+    var topmenu = new WebFXTree('Review Information');
+        var menuComponent0 = new WebFXTreeItem('1 EXAM 2');
+        topmenu.add(menuComponent0);
+        var menuComponent1 = new WebFXTreeItem('1.1 Exam 2 review questions and answers','javascript:go(2523644369061,2457549687101)');
+        menuComponent0.add(menuComponent1);
+        var menuComponent2 = new WebFXTreeItem('1.2 Exam 2 review solutions','javascript:go(2523644367061,2457549687101)');
+        menuComponent0.add(menuComponent2);
+        var menuComponent3 = new WebFXTreeItem('1.3 Screencast_Exam 2 Review','javascript:go(2523833719091,2457549687101)');
+        menuComponent0.add(menuComponent3);
+        var menuComponent4 = new WebFXTreeItem('2 EXAM 1');
+        topmenu.add(menuComponent4);
+        var menuComponent5 = new WebFXTreeItem('2.1 Exam 1 review questions and answers','javascript:go(2496798646051,2457549687101)');
+        menuComponent4.add(menuComponent5);
+        var menuComponent6 = new WebFXTreeItem('2.2 Exam 1 review solutions','javascript:go(2496798644051,2457549687101)');
+        menuComponent4.add(menuComponent6);
+        var menuComponent7 = new WebFXTreeItem('2.3 Screencast_Exam 1 Review','javascript:go(2497006549061,2457549687101)');
+        menuComponent4.add(menuComponent7);
+        var menuComponent8 = new WebFXTreeItem('3 Last year\'s exams');
+        topmenu.add(menuComponent8);
+        var menuComponent9 = new WebFXTreeItem('3.1 CHEM 102 Winter 11 Exam 1 version a with answers','javascript:go(2457554779101,2457549687101)');
+        menuComponent8.add(menuComponent9);
+        var menuComponent10 = new WebFXTreeItem('3.2 CHEM 102 Winter 11 Exam 2 version a with answers','javascript:go(2457554781101,2457549687101)');
+        menuComponent8.add(menuComponent10);
+        var menuComponent11 = new WebFXTreeItem('3.3 CHEM 102 Winter 11 Exam 3 version a with answers','javascript:go(2457554783101,2457549687101)');
+        menuComponent8.add(menuComponent11);
+        var menuComponent12 = new WebFXTreeItem('3.4 CHEM 102 Winter 11 Make-up Exam version a with answers','javascript:go(2457554787101,2457549687101)');
+        menuComponent8.add(menuComponent12);
+        var menuComponent13 = new WebFXTreeItem('3.5 CHEM 102 Winter 11 Final Exam version a with answers','javascript:go(2457554785101,2457549687101)');
+        menuComponent8.add(menuComponent13);
+            document.write(topmenu);
+//-->
+</script>
+
+</div>
+
+<script>
+var highlightId = 0;
+
+highlightId = 2523644369061;
+
+if (document.getElementById && document.getElementById(highlightId) != null) {
+document.getElementById(highlightId).style.background = '#e4eaef';
+}
+</script>
+</body>
+</html>

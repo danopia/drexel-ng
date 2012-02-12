@@ -1,0 +1,208 @@
+http://learning.dcollege.net/webct/action/breadcrumbsOnly.jsp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!-- action/breadcrumbsOnly.jsp -->
+<!-- applicationframework/CommonHeader.jspi -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- applicationframework/contextPath.jspi -->
+
+
+
+
+
+
+<html dir="ltr">
+<head>
+
+<!-- applicationframework/HeaderCSS.jspi -->
+
+
+<script language="javascript" type="text/javascript" src="/webct/libraryjs.dowebct?locale=en_US"></script>
+<script type="text/javascript">
+function navJump(){
+var appFrame = getApplicationFrame();
+if(appFrame){
+if(appFrame.TOOLFRAME.LEFTTOOLFRAME){
+if(appFrame.TOOLFRAME.LEFTTOOLFRAME.document.getElementById("cthomepage")) appFrame.TOOLFRAME.LEFTTOOLFRAME.focus();
+else appFrame.TOOLFRAME.focus();
+}else if(appFrame.TOOLFRAME.EXPLORER_LEFT){
+appFrame.TOOLFRAME.EXPLORER_LEFT.focus();
+}else appFrame.TOPAPPFRAME.focus();
+}
+}
+function contentJump(){
+var appFrame = getApplicationFrame();
+if(appFrame){
+if(appFrame.TOOLFRAME.RIGHTTOOLFRAME) appFrame.TOOLFRAME.RIGHTTOOLFRAME.focus();
+else if(appFrame.TOOLFRAME.EXPLORER_RIGHT) appFrame.TOOLFRAME.EXPLORER_RIGHT.focus();
+else appFrame.TOOLFRAME.focus();
+}
+}
+function hideLinks(){
+var appFrame = getApplicationFrame();
+if(appFrame){
+if(window.name=="LEFTTOOLFRAME" || window.name=="EXPLORER_LEFT")document.getElementById("jumpLinks").removeChild(document.getElementById("navijump"));
+if(window.name=="RIGHTTOOLFRAME" || window.name=="EXPLORER_RIGHT")document.getElementById("jumpLinks").removeChild(document.getElementById("contjump"));
+}
+else{
+document.getElementById("jumpLinks").removeChild(document.getElementById("navijump"))
+document.getElementById("jumpLinks").removeChild(document.getElementById("contjump"))
+}
+}
+</script>
+<link rel="stylesheet" href="/webct/css/styles.jsp?locale=en_US&Id=2457549603101&colorSetId=99DAFF000000265D80265D80cad7ee265D80ffffff265D80F8FAFD265D80B3E1FF265D80B3E1FF&fontSize=.8em&fontType=Verdana,Arial,Helvetica,sans-serif" type="text/css" />
+<div id="jumpLinks">
+<a href="Javascript:navJump()" id="navijump" accesskey="1" title="Jump to Navigation Frame" class="hideoff">Jump to Navigation Frame</a>
+<a href="Javascript:contentJump()" id="contjump" accesskey="2" title="Jump to Content Frame" class="hideoff">Jump to Content Frame</a>
+</div>
+<script type="text/javascript">hideLinks()</script>
+
+<script language="javascript" type="text/javascript" src="/webct/libraryjs.dowebct?locale=en_US"></script>
+
+<script language="javascript">
+var ie=document.all&&navigator.userAgent.indexOf("Opera")==-1
+var ns6=navigator.userAgent.indexOf("Netscape6")>-1;
+var saf=navigator.userAgent.indexOf("Safari")>-1;
+
+function adjustSize() {
+var bcHeight = getBcHeight();
+if (bcHeight != null) {
+if (bcHeight < 10) {
+bcHeight = 0;
+}
+parent.document.body.rows = bcHeight + ",*";
+}
+}
+
+function getBcHeight(){
+var bcTable = document.getElementById("breadcrumbTable");
+var bcHeight=bcTable.offsetHeight;
+return bcHeight;
+}
+</script>
+</head>
+<body class="listingpage" onLoad="adjustSize()" onResize="adjustSize()">
+<table id="breadcrumbTable"><tr><td><!-- action/breadcrumbs.jspi -->
+
+<script language="javascript">
+function isTargetValid(frame, triesleft, target) {
+
+try {
+if (frame == null) {
+return false;
+}
+if (triesleft < 1) {
+return false;
+}
+if (triesleft == null || triesleft == '') {
+triesleft = 6;
+}
+if (frame != null && frame.name == target ) {
+return true;
+} else {
+return isTargetValid(frame.parent, triesleft -1, target);
+}
+} catch (err) {
+return false;
+}
+}
+</script>
+
+<div name="breadcrumbDiv" id="breadcrumbDiv" class="breadcrumbs" style="display:none">
+<iframe id="breadcrumb" frameborder="0"  src="/webct/blank.html" style="position:absolute; top:0px; left:0px; display:none;"
+width="0"  height="0" name="breadcrumb"
+marginwidth="0"></iframe>
+
+
+
+
+
+
+<a href="/webct/urw/tp2457549603101.lc2454407222131/previewtoc.dowebct?TOCId=2457549687101" id="backId" title="Back" class="inline" target="RIGHTTOOLFRAME"><img src="/webct/images/small_back.gif" width="16" height="16" alt="Back"></a> <img id="divider" src="/webct/images/dot_divide2.gif" alt="">
+<script language="javascript">
+var backLink = document.getElementById('backId');
+if (isTargetValid(this.window,6,backLink.target) == false) {
+backLink.target = this.window.name;
+}
+</script>
+
+
+<span>Your location: </span>
+
+
+<a href="https://learning.dcollege.net:443/webct/urw/tp2457549603101.lc2454407222131/CourseContentDispatch.dowebct?tab=view&amp;displayinfo=2457549604101" id="breadcrumb0" target="RIGHTTOOLFRAME">Home Page</a> &#8250;
+<script language="javascript">
+var bcLink = document.getElementById('breadcrumb0');
+if (isTargetValid(this.window,6,bcLink.target) == false) {
+bcLink.target = this.window.name;
+}
+</script>
+
+
+
+
+<a href="/webct/urw/tp2457549603101.lc2454407222131/previewtoc.dowebct?TOCId=2457549687101" id="breadcrumb1" target="RIGHTTOOLFRAME">Review Information</a> &#8250;
+<script language="javascript">
+var bcLink = document.getElementById('breadcrumb1');
+if (isTargetValid(this.window,6,bcLink.target) == false) {
+bcLink.target = this.window.name;
+}
+</script>
+
+
+
+
+
+EXAM 2 &#8250;
+
+
+
+W12_Exam 2 review questions
+
+</div>
+
+
+<script language="javascript">
+var br = document.getElementById('breadcrumb');
+var brDiv = document.getElementById('breadcrumbDiv');
+// HIDE the breadcrumbs if in a pop up (i.e.  No parent is RIGHTTOOLFRAME or TOOLFRAME)
+if (isInRightToolFrame(this.window)) {
+br.height=0;
+br.src="/webct/urw/tp2457549603101.lc2454407222131/breadcrumbIFrame.dowebct?popup=false";
+brDiv.style.display = "block";
+}else{
+br.height=0;
+br.src="/webct/urw/tp2457549603101.lc2454407222131/breadcrumbIFrame.dowebct?popup=true";
+brDiv.height=0;
+brDiv.style.display = "none";
+}
+</script>
+</td></tr></table>
+</body>
+</html>
