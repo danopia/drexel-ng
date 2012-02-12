@@ -68,6 +68,8 @@
     <Compile Include="Module.vb" />
     <Compile Include="Modules\Discussion\Message.vb" />
     <Compile Include="Modules\Discussion\Topic.vb" />
+    <Compile Include="Modules\MyGrades\Grade.vb" />
+    <Compile Include="Modules\MyGrades\GradesModule.vb" />
     <Compile Include="RegEx.vb" />
     <Compile Include="Session.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

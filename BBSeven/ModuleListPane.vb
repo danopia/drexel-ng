@@ -53,6 +53,10 @@
             Dim Pane As New DiscussionsListPane
             Pane.SetCourse(Source)
             Me.View.PutPaneAfter(Me, Pane)
+        ElseIf Me.SelectedItem.Source.Label = "My Grades" Then
+            Dim Pane As New GradesPane
+            Pane.SetCourse(Source)
+            Me.View.PutPaneAfter(Me, Pane)
         End If
     End Sub
 End Class

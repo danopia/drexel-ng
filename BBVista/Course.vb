@@ -51,6 +51,9 @@
     Public Function GetDisc() As DiscussionModule
         Return New DiscussionModule(Me)
     End Function
+    Public Function GetGrades() As GradesModule
+        Return New GradesModule(Me)
+    End Function
 End Class
 
 ''HTML = Session.client.GetString("tp2466051976111.lc2459371910121/courseFS.dowebct?tab=view&forward=studentCourseView.dowebct&lcid=2459371910121")

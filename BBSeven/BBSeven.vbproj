@@ -119,6 +119,7 @@
     <Compile Include="Modules\Discussions\DiscussionTopicPane.vb" />
     <Compile Include="Modules\Discussions\DiscussionTopicListPane.vb" />
     <Compile Include="Modules\Discussions\DiscussionsListPane.vb" />
+    <Compile Include="Modules\GradesPane.vb" />
     <Compile Include="Settings\StylePane.xaml.vb">
       <DependentUpon>StylePane.xaml</DependentUpon>
     </Compile>
