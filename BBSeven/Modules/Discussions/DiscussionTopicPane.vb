@@ -46,6 +46,13 @@
         Body.TextWrapping = TextWrapping.Wrap
         Body.Padding = New Thickness(3)
 
+        Dim Binding As New Binding()
+        Binding.Mode = BindingMode.TwoWay
+        Binding.Source = My.Application.Resources.Item("settings")
+        Binding.Path = New PropertyPath("FontSize")
+        Body.SetBinding(TextBlock.FontSizeProperty, Binding)
+        '  New Data.Binding("StaticResource settings}, Path=FontSize, Mode=TwoWay}"
+
         _layout.Children.Add(_subject)
         _layout.Children.Add(_author)
         _layout.Children.Add(_date)

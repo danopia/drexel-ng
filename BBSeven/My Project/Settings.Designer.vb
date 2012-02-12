@@ -110,18 +110,6 @@ Partial Friend NotInheritable Class MySettings
             Me("FontFamily") = value
         End Set
     End Property
-    
-    <Global.System.Configuration.UserScopedSettingAttribute(),  _
-     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("")>  _
-    Public Property FontStyle() As String
-        Get
-            Return CType(Me("FontStyle"),String)
-        End Get
-        Set
-            Me("FontStyle") = value
-        End Set
-    End Property
 End Class
 
 Namespace My

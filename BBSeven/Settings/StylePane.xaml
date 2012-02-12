@@ -3,15 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:p="clr-namespace:BBSeven"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <StackPanel>
         <Label Content="Font Family" FontSize="18" />
-        <RadioButton Content="Segoe UI" Name="FamilyRadio1" GroupName="family" Margin="10,2" IsChecked="True" />
-        <RadioButton Content="Times New Roman" Name="FamilyRadio2" GroupName="family" Margin="10,2" />
-        <RadioButton Content="Arial" Name="FamilyRadio3" GroupName="family" Margin="10,2" />
-
+        <RadioButton Content="Arial" Name="FamilyRadio1" GroupName="family" Margin="10,2" FontFamily="Arial" FontSize="{Binding Source={StaticResource settings}, Path=FontSize, Mode=TwoWay}" />
+        <RadioButton Content="Cambria" Name="FamilyRadio2" GroupName="family" Margin="10,2" FontFamily="Cambria" FontSize="{Binding Source={StaticResource settings}, Path=FontSize, Mode=TwoWay}" />
+        <RadioButton Content="Comic Sans MS" Name="FamilyRadio3" GroupName="family" Margin="10,2" FontFamily="Comic Sans MS" FontSize="{Binding Source={StaticResource settings}, Path=FontSize, Mode=TwoWay}" />
+        <RadioButton Content="Segoe UI" Name="FamilyRadio4" GroupName="family" Margin="10,2" IsChecked="True" FontSize="{Binding Source={StaticResource settings}, Path=FontSize, Mode=TwoWay}" />
+        <RadioButton Content="Times New Roman" Name="FamilyRadio5" GroupName="family" Margin="10,2" FontFamily="Times New Roman" FontSize="{Binding Source={StaticResource settings}, Path=FontSize, Mode=TwoWay}" />
+        
         <Label Content="Font Size" FontSize="18" />
-        <Slider Name="FontSizeSlider" Margin="10,2" Value="12" Minimum="8" Maximum="72" LargeChange="6" SmallChange="1" TickPlacement="BottomRight" TickFrequency="2" />
+        <Slider Name="FontSizeSlider" Margin="10,2" Minimum="8" Maximum="72" LargeChange="6" SmallChange="1" TickPlacement="BottomRight" TickFrequency="2" Value="{Binding Source={StaticResource settings}, Path=FontSize, Mode=TwoWay}" />
     </StackPanel>
 </UserControl>

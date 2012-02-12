@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:settings="clr-namespace:BBSeven">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary>
+            <settings:MySettings x:Key="settings" />
+        </ResourceDictionary>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
