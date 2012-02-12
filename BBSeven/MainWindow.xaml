@@ -15,7 +15,7 @@
             </Grid.ColumnDefinitions>
             <Label Content="Daniel Lamando" Name="UserLabel" VerticalAlignment="Center" Grid.Column="1" />
             <Expander Height="23" Name="BackButton" ExpandDirection="Left" IsEnabled="False" />
-            <Button Grid.Column="2" Name="Gear">
+            <Button Grid.Column="2" Name="Gear" Focusable="False">
                 <Button.BorderBrush>
                     <SolidColorBrush />
                 </Button.BorderBrush>
