@@ -34,12 +34,6 @@ Public Class GradesPane
         _name.VerticalAlignment = Windows.VerticalAlignment.Top
         Grid.SetColumn(_name, 0)
 
-        _desc.Text = Source.Comments
-        _desc.TextWrapping = TextWrapping.Wrap
-        _desc.Padding = New Thickness(3)
-        _desc.VerticalAlignment = Windows.VerticalAlignment.Top
-        Grid.SetColumn(_desc, 2)
-
         If Source.Grade < 0 Then
             _name.Opacity = 0.5
         Else
@@ -49,6 +43,18 @@ Public Class GradesPane
         End If
         Grid.SetColumn(_grade, 1)
 
+
+        If (Source.Comments.Length > 0) Then
+            _desc.Text = Source.Comments
+            _desc.TextWrapping = TextWrapping.Wrap
+            _desc.Padding = New Thickness(53, 3, 3, 3)
+            _desc.VerticalAlignment = Windows.VerticalAlignment.Top
+            Grid.SetRow(_desc, 1)
+            Grid.SetColumnSpan(_desc, 2)
+            _layout.Children.Add(_desc)
+        End If
+
+
         Dim Col As New ColumnDefinition()
         Col.Width = New GridLength(1, GridUnitType.Star)
         _layout.ColumnDefinitions.Add(Col)
@@ -57,13 +63,18 @@ Public Class GradesPane
         Col.Width = New GridLength(1, GridUnitType.Star)
         _layout.ColumnDefinitions.Add(Col)
 
-        Col = New ColumnDefinition()
-        Col.Width = New GridLength(2, GridUnitType.Star)
-        _layout.ColumnDefinitions.Add(Col)
+
+        Dim Row As New RowDefinition()
+        Row.Height = GridLength.Auto
+        _layout.RowDefinitions.Add(Row)
+
+        Row = New RowDefinition()
+        Row.Height = GridLength.Auto
+        _layout.RowDefinitions.Add(Row)
+
 
         _layout.Children.Add(_name)
         _layout.Children.Add(_grade)
-        _layout.Children.Add(_desc)
 
         Control.Content = _layout
     End Sub
