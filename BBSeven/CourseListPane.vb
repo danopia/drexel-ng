@@ -43,4 +43,14 @@
             Control.IsExpandable = True
         End If
     End Sub
+
+    Private Sub CourseListPane_OnSelectionChanged(sender As Object, e As System.Windows.RoutedEventArgs) Handles Me.OnSelectionChanged
+        If Me.SelectedItem Is Nothing Then
+            Me.View.PopPane()
+        Else
+            Dim ModuleList As New ModuleListPane
+            ModuleList.SetCourse(Me.SelectedItem.Source)
+            Me.View.PutPaneAfter(Me, ModuleList)
+        End If
+    End Sub
 End Class

@@ -2,10 +2,12 @@
     Inherits ShiftingPanes.GroupedMenuListPane(Of BBVista.Module)
 
     Protected Friend WithEvents Worker As New ComponentModel.BackgroundWorker
+    Public Source As BBVista.Course
 
     Public Sub SetCourse(Course As BBVista.Course)
         Me.IsThrobbing = True
         Worker.RunWorkerAsync(Course)
+        Me.Source = Course
     End Sub
 
     Private Sub Worker_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles Worker.DoWork
@@ -42,5 +44,15 @@
         _stack.Children.Add(_label)
 
         Control.Content = _stack
+    End Sub
+
+    Private Sub ModuleListPane_OnSelectionChanged(sender As Object, e As System.Windows.RoutedEventArgs) Handles Me.OnSelectionChanged
+        If Me.SelectedItem Is Nothing Then
+            Me.View.PopPane()
+        ElseIf Me.SelectedItem.Source.Label = "Discussions" Then
+            Dim Pane As New DiscussionsListPane
+            Pane.SetCourse(Source)
+            Me.View.PutPaneAfter(Me, Pane)
+        End If
     End Sub
 End Class
