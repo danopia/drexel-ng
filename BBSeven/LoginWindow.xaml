@@ -49,7 +49,6 @@
             </ComboBox>
             <TextBox Grid.Column="5" Grid.Row="1" Name="ServerText" Margin="5" />
             <ComboBox Grid.Column="5" Grid.Row="2" Name="ComboBox2" Margin="5" />
-            <Slider Grid.Column="5" Grid.Row="3" Name="Slider1" Value="{Binding Path=ScaleX, ElementName=ScaleTransform}" Maximum="2" />
         </Grid>
     </my:Throbbable>
 </Window>
